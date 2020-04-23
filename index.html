@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="css/week1.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="content">
+    <header>
+        <h1>Sylvie Dorsett</h1><div id="image-wrapper">
+        <img src="images/myimage.jpg" alt="Profile Picture"></div>  
+    </header>
+    <main>
+        <h2>WDD 230: Assignment Portal</h2>
+        <hr>
+        <ul>
+            <li>Lesson 02: <a href="WDD230week2.html">Assignment Link</a></li>
+            <li>Lesson 03: <a href="WDD230week2.html">Assignment Link</a></li>
+            <li>Lesson 04: <a href="WDD230week2.html">Link</a> | <a href="WDD230week2.html">Link</a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; | Sylvie Dorsett | Arizona |<a href="http://www.byui.edu"> BYUI Online Learning</a></p>
+        <p>Last Updated: <span id="last"></span></p>
+        <script>
+            const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+            document.getElementById('last').textContent = new Date().toLocalDateString('en-US', options);
+        </script>
+    </footer>
+    </div>
 </body>
 </html>
