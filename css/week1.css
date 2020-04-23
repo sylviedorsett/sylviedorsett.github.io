@@ -73,9 +73,13 @@ main ul {
 }
 
 main ul a {
-    color: #EE6C4D;
+    color: #394053;
+    font-style: italic;
 }
 
 footer a {
     color: #98C1D9;
+}
+#currentYear {
+    color: #EE6C4D;
 }
