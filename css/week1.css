@@ -21,7 +21,7 @@ header, footer {
 header {
     border-radius: 5px 5px 0 0;
     font-family: "Handlee", cursive;
-    text-align: relative;
+    text-align: center;
 }
 
 footer {
@@ -31,10 +31,13 @@ footer {
 }
 
 h1 {
-    margin: 1.5rem;
-    font-size: 3rem;
+    margin: 1.5rem 250px 1.5rem 250px;
+    font-size: 2.5rem;
 }
 
+h2 {
+    font-size: 2rem;
+}
 img {
     float: right;
     width: 200px;
@@ -47,7 +50,7 @@ img {
     height: 200px;
     overflow: hidden;
     align-items: center;
-    margin: -4rem 1.5rem 4rem 2rem;
+    margin: -6rem 5px 0 2rem;
     display: flex;
     border: 5px solid #EE6C4D;
     border-radius: 4px;
@@ -66,6 +69,7 @@ hr {
 }
 main ul {
     list-style: none;
+    font-size: 1.5rem;
 }
 
 main ul a {

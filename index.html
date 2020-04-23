@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 230 Week 1 Document</title>
-    <meta name="Assignment Portal for WDD230" content="Weekly Assignment Links">
+    <title>WDD 230 Week 1 Assignment Portal</title>
+    <meta name="Assignment Portal for Sylvie Dorsett in WDD 230: Web Frontend Development course at BYUI" content="Weekly Assignment Links">
     <link href="css/week1.css" rel="stylesheet">
-    <link href="js/week1.js" rel="js">
 </head>
+
 <body>
     <div id="content">
     <header>
@@ -24,11 +24,10 @@
         </ul>
     </main>
     <footer>
-        <p>&copy; | Sylvie Dorsett | Arizona |<a href="http://www.byui.edu"> BYUI Online Learning</a></p>
+        <p>&copy; | Sylvie Dorsett | Arizona | <a href="http://www.byui.edu/online">BYUI Online Learning</a></p>
         <p>Last Updated: <span id="last"></span></p>
         <script>
-            //const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
-            var mod = (document.lastModified);
+            var mod = document.lastModified;
             document.getElementById("last").innerHTML = mod;
             </script>
     </footer>
