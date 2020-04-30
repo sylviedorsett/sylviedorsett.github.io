@@ -8,11 +8,13 @@ header, footer {
     text-align: center;
     padding: .5rem;
     border-radius: 5px;
+    margin: 25px;
 }
 
 footer {
     font-family: "Roboto", verdana, sans-serif;
     font-size: 1rem;
+
 }
 
 header h1 {
@@ -38,6 +40,7 @@ div h2 {
 
 h1, h2, h3 {
     font-family: "Handlee", cursive;
+    padding: .5rem;
 }
 
 img {
@@ -46,6 +49,16 @@ img {
     border-radius: 5px;
 }
 
+div p {
+    padding: 1rem;
+    text-align: justify;
+}
+
 a {
     color: #495867;
+    font-style: italic;
+}
+
+main {
+    margin: 0 25px 0 25px;
 }
