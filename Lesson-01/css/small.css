@@ -2,13 +2,12 @@ body {
     background-color:#3D5A80;
     margin: 3rem auto;
 }
-
-    #content {
-        background-color:#98C1D9;
-        border-radius: 5px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
+#content {
+    background-color:#98C1D9;
+    border-radius: 5px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 header, footer {
     background-color: #293241;
@@ -43,6 +42,7 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+
 img {
     float: right;
     width: 200px;
@@ -68,11 +68,13 @@ main {
     margin: 2rem 0 2rem 2rem;
     font-family: "Roboto", Verdana, Sans-serif;
 }
+
 hr {
     height: .5rem;
     border: .5rem;
     background-color: #EE6C4D;
 }
+
 main ul {
     list-style: none;
     font-size: 1.5rem;
