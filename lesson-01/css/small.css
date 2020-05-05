@@ -1,9 +1,9 @@
-body {
+html {
     background-color:#3D5A80;
     margin: 3rem auto;
 }
 
-#content {
+body {
     background-color:#98C1D9;
     border-radius: 5px;
     max-width: 1000px;
@@ -47,16 +47,6 @@ h2 {
 img {
     float: right;
     width: 200px;
-    height: 200px;
-}
-
-#image-wrapper {
-    float: right;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    align-items: center;
-    margin: -6rem 5px 5px 2rem;
     border: 5px solid #EE6C4D;
     border-radius: 4px;
     box-shadow: 0 4px 4px 4px #3D5A80;
@@ -66,7 +56,7 @@ main {
     text-align: left;
     color: #293241;
     line-height: 1.5;
-    margin: 2rem 0 2rem 2rem;
+    margin: 1rem;
     font-family: "Roboto", Verdana, Sans-serif;
 }
 
