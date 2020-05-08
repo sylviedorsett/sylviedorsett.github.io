@@ -1,7 +1,8 @@
 
-@media (min-width: 500px) {
-    nav ul li{
-        display: inline-block
+@media (min-width: 700px) {
+    nav ul{
+        display: flex;
+        flex-direction: row;
     }
 
 }
