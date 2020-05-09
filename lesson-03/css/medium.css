@@ -1,8 +1,13 @@
 
-@media (min-width: 700px) {
+@media (min-width: 650px) {
     nav ul{
         display: flex;
         flex-direction: row;
+        align-content: center;
     }
 
+    header {
+
+
+    }
 }

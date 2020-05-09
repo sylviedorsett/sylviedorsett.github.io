@@ -3,6 +3,7 @@ html {
     margin: 3rem auto;
     line-height: 1.5;
     font-family: "Open Sans", sans-serif;
+    min-height: 100%;
 }
 
 body {
@@ -11,19 +12,21 @@ body {
     background-color: #88D498;
     color: #114B5F;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer {
     display: flex;
-    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: #114B5F;
     color: #F3E9D2;
-    align-items: center;
     font-size: 18px;
 }
 
 header {
-    text-align: center;
     padding: 1.5rem;
     border-radius: 5px 5px 0 0;
 }
@@ -31,12 +34,13 @@ header {
 header img {
     width: 150px;
     border: 5px solid #88D498;
+
 }
 
 footer {
     padding: 1.5rem;
     border-radius: 0 0 5px 5px;
-    justify-content: center;
+    margin-top: auto;
 }
 
 footer a {
@@ -58,11 +62,15 @@ nav ul li {
     background-color: #1A9364;
     border-radius: 5px;
     padding: .5rem;
-    margin: .5rem;
+    margin: .75rem;
+    text-align: center;
 }
 
 main {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 a {
@@ -102,6 +110,7 @@ h3 {
 #color {
     color: #114B5F;
     font-style: italic;
+    margin: auto;
 }
 
 table {
