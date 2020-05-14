@@ -2,12 +2,14 @@ var date = new Date();
 var currentYear = date.getFullYear();
 document.getElementById("year").innerHTML = currentYear;
 
-const monthNames = ["January", "February", "March", "April", "May", "June",
-"July", "August", "September", "October", "November", "December"];
-let dateObj = new Date();
-let month = monthNames[dateObj.getMonth()];
-let day = String(dateObj.getDate()).padStart(2, '0');
-let year = dateObj.getFullYear();
-let output = month  + '\n'+ day  + ',' + year;
+var currentDate = new Date ();
+var date = currentDate.getDate();
+var day = currentDate.getDay();
+var month = currentDate.getMonth();
+var year = currentDate.getFullYear();
+var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-document.querySelector(".date").textContent = output;
+var dateString = dayNames[day] + ", " + monthNames[month] + " " + date + ", " + year; 
+
+document.getElementById(".date").innerHTML = dateString;
