@@ -1,6 +1,14 @@
+
+function toggleMenu() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
+
+
 var date = new Date();
 var currentYear = date.getFullYear();
 document.getElementById("year").innerHTML = currentYear;
+
+
 
 var currentDate = new Date ();
 var date = currentDate.getDate();
