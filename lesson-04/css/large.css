@@ -1,0 +1,19 @@
+@media (min-width: 1024px) {
+
+    header {
+        padding: 1.5rem;
+    }
+
+    header img {
+        width: 200px;
+        max-height: 200px;
+    }
+
+    nav {
+        font-size: 18pt;
+    }
+
+    main {
+        font-size: 18pt;
+    }
+}

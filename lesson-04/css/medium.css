@@ -1,0 +1,23 @@
+@media (min-width: 575px) {
+    header {
+        padding: .75rem;
+    }
+
+    header h1 {
+        font-size: 30pt;
+    }
+
+    header h3 {
+        font-size: 16pt;
+        margin-top: -20px;
+    }
+
+    header img {
+        width: 150px;
+        max-height: 150px;
+    }
+
+    nav buton {
+        display: none;
+    }
+}

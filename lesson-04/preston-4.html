@@ -9,27 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Trirong:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <img src="images/rainorshineusalogo.jpg" alt="Profile Picture of Sylvie Dorsett">
-        <div id="headerDiv">
-        <h1>Rain or Shine USA</h1>
-        <h3>Weather when you need it.</h3>
-        </div>
-    </header>
-    <nav>
-        <button class="ham" onclick="toggleMenu()">&#9776; Menu</button>
-        <ul class="navigation responsive">
-            <li><a href="">Home</a></li>
-            <li><a href="">Preston</a></li>
-            <li><a href="">Soda Springs</a></li>
-            <li><a href="">Fish Haven</a></li>
-            <li><a href="">Storm Center</a></li>
-            <li><a href="">Gallery</a></li>
-        </ul>
-    </nav>
+
+    <div>
+        <header class="page-header">
+            <img src="images/rainorshineusalogo.jpg" alt="Profile Picture of Sylvie Dorsett">
+            <div id="headerDiv">
+                <h1>Rain or Shine USA</h1>
+                <h3>Weather when you need it.</h3>
+            </div>
+        </header>
+        <nav>
+            <button class="ham" onclick="toggleMenu()">&#9776; Menu</button>
+            <ul class="navigation responsive">
+                <li><a href="">Home</a></li>
+                <li><a href="">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a href="">Storm Center</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
         <h2>Preston Idaho</h2>
         <div class="contentbox">Placeholder 1</div>
@@ -41,6 +45,8 @@
         <p>&copy; <span id="year">The Weather Site</span> | Attributions | Sylvie Dorsett</p>
         <p><span id=".date"></span></p>
     </footer>
+
     <script src="js/index.js"></script>
+
 </body>
 </html>
