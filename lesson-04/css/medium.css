@@ -9,7 +9,7 @@
 
     header h3 {
         font-size: 16pt;
-        margin-top: -20px;
+        margin-top: -10px;
     }
 
     header img {
@@ -17,7 +17,28 @@
         max-height: 150px;
     }
 
-    nav buton {
+    nav button {
         display: none;
     }
+
+    nav ul.response {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav li {
+        padding: .8rem;
+        margin: 0;
+        text-align: center;
+        border: none;
+        font-size: 18pt;
+    }
+
+    .contentbox {
+        font-size: 14pt;
+        padding: 1.5rem;
+    }
+
 }
