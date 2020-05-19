@@ -1,0 +1,43 @@
+@media (min-width: 1024px) {
+  
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #F3E9D2;
+    }
+
+    header {
+        padding: 1.5rem;
+        font-size: 36pt;
+    }
+
+    header h3 {
+        font-size: 18pt;
+        margin-top: -5px;
+    }
+
+    header img {
+        width: 200px;
+        max-height: 200px;
+        margin: .5rem;
+    }
+
+    nav {
+        font-size: 18pt;
+    }
+
+    main {
+        font-size: 18pt;
+        min-width: 900px;
+        max-width: 900px;
+        align-self: center;
+        padding: 1.5rem;
+        background-color: #88D498;
+    }
+
+    footer {
+        max-width: 900px;
+        min-width: 900px;
+        align-self: center;
+    }
+}
