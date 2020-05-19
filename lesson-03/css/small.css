@@ -1,5 +1,5 @@
 html {
-    background-color: #1A9364;
+    background-color: white;
     margin: 3rem auto;
     line-height: 1.5;
     font-family: "Open Sans", sans-serif;
@@ -33,7 +33,7 @@ header {
 
 header img {
     width: 150px;
-    border: 5px solid #88D498;
+    border: none;
 
 }
 
@@ -45,6 +45,15 @@ footer {
 
 footer a {
     font-style: italic;
+}
+.header-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-div {
+    margin-bottom: -20px;
+    text-align: center;
 }
 
 nav {
@@ -80,14 +89,15 @@ a {
 
 img {
     width: 200px;
-    border: 5px solid white;
-    border-radius: 5px;
 }
 
 #imgHome {
     margin-top: 2rem;
 }
 
+#trirong-example {
+    font-family: "Trirong", "cursive";
+}
 
 p {
     text-align: justify;
