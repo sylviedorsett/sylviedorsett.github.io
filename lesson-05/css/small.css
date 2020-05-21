@@ -12,6 +12,14 @@ body {
     min-height: 100%;
 }
 
+/*Banner Display*/
+
+#banner {
+    text-align: center;
+    font-family: "Trirong";
+    font-size: 1.25rem;
+    padding: .5rem;
+}
 
 /*Header CSS*/
 
