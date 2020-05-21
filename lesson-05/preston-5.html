@@ -26,7 +26,7 @@
         <button class="ham" onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="navigation" class="response">
             <li><a href="">Home</a></li>
-            <li class="active"><a href="">Preston</a></li>
+            <li class="active"><a href="preston-5.html">Preston</a></li>
             <li><a href="">Soda Springs</a></li>
             <li><a href="">Fish Haven</a></li>
             <li><a href="">Storm Center</a></li>
@@ -36,18 +36,58 @@
     <main>
         <h2>Preston, Idaho</h2>
         <div id="hero-container">
-            <div class="hero-img">Hero Image</div>
+            <img class="hero-img" src="images/prestontownimage.jpg">
+            <!--credidation for public domain picture https://www.pexels.com/photo/scenic-view-of-agricultural-field-against-sky-during-sunset-325944/-->
             <section class="summary">
                 <h3>Weather Summary</h3>
-                <p>Lorem, ipsum dolor sit </p>
-                <p>Lorem, ipsum dolor sit </p>
-                <p>Lorem, ipsum dolor sit </p>
-                <p>Lorem, ipsum dolor sit </p>
+                <p>Current: Partly Cloudy, 68°</p>
+                <p>Today's High: 72°</p>
+                <p>Humidity: 59%</p>
+                <p>Wind Speed: 5mph</p>
             </section>
         </div>
-        <div class="contentbox">5 Day Forecast</div>
-        <div class="contentbox">Article</div>
-        <div class="contentbox">Contact Information</div>
+
+        <div class="contentbox" id="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                </tr>
+                <tr>
+                    <td><img src="images/sunicon.jpg" class="table-icon"><br>72°</td>
+                    <td><img src="images/sunicon.jpg" class="table-icon"><br>74°</td>
+                    <td><img src="images/windyicon.jpg" class="table-icon"><br>70°</td>
+                    <td><img src="images/rainicon.jpg" class="table-icon"><br>66°</td>
+                    <td><img src="images/rainicon.jpg" class="table-icon"><br>65°</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="contentbox" id="article-div">
+            <img src="images/potatofestival.jpg" class="article-img">
+            <!--credidation for public domain picture https://www.pexels.com/photo/adult-business-commerce-cook-375889/-->
+            <h3>Potato Festival</h3>
+            <p><em>By Dottie Do-Good</em></p>
+            <p></p>
+        </div>
+
+        <div class="contentbox">
+            <h4>Rain or Shine USA</h4>
+            <p>1234 Weather Ln</p>
+            <p>Preston, ID 83263</p><br>
+            <p>999-999-9999</p>
+            <p>rainorshineusa@rosusa.com</p>
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="year">The Weather Site</span> | Attributions | Sylvie Dorsett</p>
