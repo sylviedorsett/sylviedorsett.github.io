@@ -29,3 +29,12 @@ function toggleMenu() {
 /* This is the js for the current date in the footer*/
 var dateString = dayNames[day] + ", " + monthNames[month] + " " + date + ", " + currentYear; 
 document.getElementById(".date").innerHTML = dateString;
+
+/*This is for the WebFont Loader*/
+<script>
+WebFont.load({
+    google: {
+        families: ["Roboto", "Handlee"]
+    }
+});
+</script>
