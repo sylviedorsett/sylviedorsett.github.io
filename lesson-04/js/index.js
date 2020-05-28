@@ -20,4 +20,4 @@ var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 
 var dateString = dayNames[day] + ", " + monthNames[month] + " " + date + ", " + year; 
 
-document.getElementById(".date").innerHTML = dateString;
+document.getElementById("currentDate").innerHTML = dateString;
