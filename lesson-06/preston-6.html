@@ -38,7 +38,11 @@
     <main>
         <h2>Preston, Idaho</h2>
         <div id="hero-container">
-            <img class="hero-img" src="images/prestontownimage.jpg">
+            <picture>
+                <source srcset="images/preston700.jpg" media="(min-width: 625px) and (max-width: 1023px)">
+                <source srcset="images/preston900.jpg" media="(min-width: 1024px)">
+            <img class="hero-img" src="images/preston500.jpg" alt="Presto Town Photo">
+            </picture>
             <!--credidation for public domain picture https://www.pexels.com/photo/scenic-view-of-agricultural-field-against-sky-during-sunset-325944/-->
             <section class="summary">
                 <h3>Weather Summary</h3>
