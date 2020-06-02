@@ -1,0 +1,242 @@
+html {
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+body {
+    background-color: #88D498;
+    color: #114B5F;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+ 
+}
+
+/*Banner Display*/
+
+#banner {
+    text-align: center;
+    font-family: "Trirong";
+    font-size: 1.25rem;
+    padding: .5rem;
+    background-color: #F3E9D2;
+}
+
+/*Header CSS*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: #114B5F;
+    padding: .5rem;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    margin: 1.5rem 0;
+}
+
+#headerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+header h1, h3 {
+    margin: 0;
+    padding: .5rem;
+    color: #F3E9D2;
+    font-family: "Trirong", cursive;
+}
+header h1 {
+    font-size: 18pt;
+}
+
+header h3 {
+    font-size: 11pt;
+    margin-top: -10px;
+}
+
+
+/*Navigation CSS*/
+
+nav {
+    background-color: #1A9364;
+    margin: 0;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+nav button {
+    margin: .2rem auto;
+    padding: .8rem 15px;
+    background-color: transparent;
+    border: none;
+    color: #F3E9D2;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+}
+
+nav ul {
+    padding: 2rem;
+}
+ nav ul.response {
+    display: none;
+}
+
+nav li {
+    display: block;
+    padding: .8rem 15px;
+    text-align: left;
+    text-decoration: none;
+    color: #F3E9D2;
+    border-top: 1px solid rgba(17, 75, 95, 0.5);
+    flex: 1 1 100%;
+    min-height: 100%;
+}
+
+nav ul li a {
+    color: #F3E9D2;
+    text-decoration: none;
+}
+
+nav ul li.active {
+    background-color: rgba(17, 75, 95, 0.7);
+    color: #114B5F;
+}
+
+li:hover {
+    background-color: #114B5F;
+}
+
+/* Main CSS */
+
+h2 {
+    text-align: center;
+}
+
+#hero-container {
+    position: relative;
+}
+
+.hero-img {
+    border: 2px solid #114B5F;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section h3 {
+    color: #114B5F;
+}
+
+.summary {
+    position: absolute;
+    margin: 1rem;
+    top: 1.5rem;
+    left: 1.5rem;
+    background-color: #F3E9D2;
+    border: 2px solid #114B5F;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 30px #777;
+    line-height: 1;
+}
+
+#forecast {
+    display: none;
+}
+
+#article-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: block;
+    background-color: #1A9364;
+    margin: 2rem;
+    padding: 2rem;
+    color: #F3E9D2;
+    border-radius: 5px;
+}
+
+.article-img {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #114B5F;
+    border-radius: 5px;
+    box-shadow: 0 0 30px #777;
+    width: 100%;
+}
+
+#article-div h3 {
+    font-size: 1.75rem;
+    margin-bottom: -20px;
+}
+
+#contact-div {
+    display:flex;
+    flex-direction: row;
+    background-color: #1A9364;
+    margin: 2rem;
+    padding: 2rem;
+    color: #F3E9D2;
+    border-radius: 5px;
+}
+
+.contactInfo {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+.contactInfo p {
+    margin-top: -10px;
+}
+
+#map {
+    display: none;
+}
+
+#mapMarker {
+    width: 25px;
+    margin-bottom: -5px;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction:  row;
+}
+
+/* Footer CSS */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #114B5F;
+    color: #F3E9D2;
+    font-size: 16px;
+    padding: 1.5rem;
+    border-radius: 0 0 5px 5px;
+}
+
+footer p {
+    margin: 0;
+}
