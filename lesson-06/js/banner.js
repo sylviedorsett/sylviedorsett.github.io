@@ -12,7 +12,7 @@ document.getElementById("year").innerHTML = currentYear;
 
 
 /* This is the js for the banner.*/
-const banner = document.getElementById("banner")
+const banner = document.getElementById("banner");
 if (day == 5) {
      banner.style.display = "block";
 }
