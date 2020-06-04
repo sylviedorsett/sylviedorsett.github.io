@@ -49,11 +49,20 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .gallery-div:hover {
+        box-shadow: 0 0 40px #114B5F;
+    }
+
     picture img {
         height: 150px;
     }
 
     .gallery-div h3{
         margin-top: -8px;
+    }
+
+    #galleryH2 {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
     }
 }

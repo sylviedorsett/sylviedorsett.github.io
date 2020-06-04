@@ -265,3 +265,8 @@ picture img {
     box-sizing: border-box;
     width: 100%;
 }
+
+#galleryH2 {
+    margin-top: 2rem;
+    margin-bottom: -.5rem;
+}
