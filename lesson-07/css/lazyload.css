@@ -1,0 +1,30 @@
+html {
+    background-color: beige;
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+    color: rgb(1, 55, 73)
+}
+
+h1 {
+    text-align: center;
+}
+
+picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img[data-src] {
+    filter: blur(.2em);
+}
+
+img {
+    margin: 2rem;
+    border: 5px solid rgb(1, 55, 73);
+    border-radius: 5px;
+    box-shadow: 0 0 30px #777;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
