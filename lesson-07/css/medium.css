@@ -90,6 +90,13 @@
         border: 2px solid #114B5F;
         box-shadow: 0 0 30px #777;
     }
+    /*CSS for Gallery Page in Medium View*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
-
+    picture img {
+        height: 225px;
+    }
 }

@@ -42,4 +42,18 @@
         min-width: 900px;
         align-self: center;
     }
+
+    /*CSS for Gallery Page in Large View*/
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    picture img {
+        height: 150px;
+    }
+
+    .gallery-div h3{
+        margin-top: -8px;
+    }
 }
