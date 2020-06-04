@@ -12,7 +12,7 @@ const loadImages = (image) => {
 
 //parameters set for the Intersection Observer API
 const imgOptions = {
-    threshold: 1,
+    threshold: .5,
 };
 
 //check to see if the IO API is supported and construct the Intersection Observer:
@@ -26,14 +26,15 @@ const imgObserver = new IntersectionObserver((items, observer) => {
     });
 }, imgOptions);
 
-//load images if necessary
-images.forEach((img) => {
+    //load images if necessary
+    images.forEach((img) => {
     imgObserver.observe(img);
-});
+    });
 
 //loads all the images if the Intersection Observer if it is not available to the browser
-}       else {
-            images.forEach((img) => {
-                loadImages(img);
-            });
+}
+else {
+    images.forEach((img) => {
+    loadImages(img);
+    });
 }
