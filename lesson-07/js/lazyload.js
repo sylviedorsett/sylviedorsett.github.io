@@ -17,7 +17,7 @@ images.forEach((img) => {
 //parameters set for the Intersection Observer API
 const imgOptions = {
     threshold: 0,
-    rootMargin: "0px 0px 100px 0px"
+    rootMargin: "0px 0px 5px 0px"
 };
 
 //check to see if the IO API is supported and construct the Intersection Observer:
