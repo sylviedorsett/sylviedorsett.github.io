@@ -12,7 +12,7 @@ const loadImages = (image) => {
 
 //parameters set for the Intersection Observer API
 const imgOptions = {
-    threshold: .5,
+    threshold: 1,
 };
 
 //check to see if the IO API is supported and construct the Intersection Observer:
