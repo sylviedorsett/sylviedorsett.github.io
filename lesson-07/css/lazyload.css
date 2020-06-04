@@ -21,7 +21,7 @@ img {
     border-radius: 5px;
     box-shadow: 0 0 30px #777;
     filter: blur(0em);
-    transition: filter 1s;
+    transition: filter .5s;
 }
 
 img[data-src] {
