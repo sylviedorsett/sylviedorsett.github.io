@@ -40,6 +40,11 @@
         padding: 1.5rem;
     }
 
+    .summary {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
     #forecast {
         display: flex;
         flex-direction: column;

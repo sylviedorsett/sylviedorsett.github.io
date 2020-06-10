@@ -20,6 +20,10 @@
         margin: .5rem;
     }
 
+    .hero-img {
+        border-radius: 5px;
+    }
+
     nav {
         font-size: 18pt;
     }
