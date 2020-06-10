@@ -241,7 +241,7 @@ footer p {
 
 /*CSS for Gallery Page*/
 
-picture {
+.picture-div {
     display: block;
     background-color: #114B5F;
     border: 4px solid #F3E9D2;
@@ -250,7 +250,7 @@ picture {
     max-width: 400px;
 }
 
-picture img {
+.pic-img {
     box-sizing: border-box;
     width: 100%;
     filter: blur(0em);

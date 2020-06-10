@@ -107,7 +107,7 @@
         margin: auto;
     }
 
-    picture img {
+    .pic-img {
         height: 225px;
     }
 }
