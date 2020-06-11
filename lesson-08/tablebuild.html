@@ -6,43 +6,69 @@
     <title>WDD 230 Week 8 | Table Build Activity</title>
     <meta name="description" content="Table Build Activity">
     <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Trirong:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link href="css/small.css" rel="stylesheet">
-    <link href="css/medium.css" rel="stylesheet">
-    <link href="css/large.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="banner">
-        <span>Saturday: Preston Pancakes in the Park! 9:00am Saturday at the city park pavilion.</span>
-    </div>
+
     <header class="page-header">
-        <img src="images/rainorshineusalogo.jpg" alt="Website Logo">
+
         <div id="headerDiv">
-            <h1>Rain or Shine USA</h1>
-            <h3>Weather when you need it.</h3>
+            <h1>Table Build Activity</h1>
         </div>
     </header>
-    <nav>
-        <button class="ham" onclick="toggleMenu()">&#9776; Menu</button>
-        <ul id="navigation" class="response">
-            <li><a href="">Home</a></li>
-            <li class="active"><a href="preston-7.html">Preston</a></li>
-            <li><a href="">Soda Springs</a></li>
-            <li><a href="">Fish Haven</a></li>
-            <li><a href="">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
-        </ul>
-    </nav>
     <main>
-      
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3"><strong>ACME Wildwest</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Period</th>
+                    <th>Sales</th>
+                    <th>Sales Goal</th>
+                </tr>
+                <tr>
+                    <td>August</td>
+                    <td>$3,590</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>$4,420</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>$4,870</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>$8,610</td>
+                    <td id="nov-td">$7,500</td>
+                </tr>
+                <tr>
+                    <td><em>Black Friday</em></td>
+                    <td colspan="2">$3,200</td>
+                </tr>
+                <tr>
+                    <td>December</td>
+                    <td>$6,820</td>
+                    <td>$7,500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><b>Compiled 12.20.2020 by bRauls</b></td>
+                </tr>
+            </tfoot>
+        </table>
     </main>
-    <footer>
-        <p>&copy; <span id="year">The Weather Site</span> | Attributions | Sylvie Dorsett</p>
-        <p><span id="currentDate"></span></p>
-    </footer>
 
-    <script src="js/banner.js"></script>
 </body>
 </html>
