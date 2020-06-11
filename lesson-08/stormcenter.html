@@ -41,7 +41,7 @@
             <fieldset>
                 <legend>Contact Information</legend>
                 <label class="top">Full Name* <input type="text" name="fullname" required></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="555-555-5555" required></label>
                 <label class="top">Zip Code* <input type="number" name="zip" required></label>
                 <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
             </fieldset>
@@ -52,12 +52,12 @@
                 <label class="top">Storm Type <input list="storms" name="stormList"></label>
                 <datalist id="storms">
                     <option>Flash Flood</option>
-                    <option>Hail</option>
+                    <optiion>Hail</option>
                     <option>Hurricane</option>
                     <option>Thunderstorm</option>
                     <option>Tornado</option>
                 </datalist>
-                <label class="top">Storm Severity (1 to 10) <input type="range" name="stormRange" min="0" max="10" step="1"></label>
+                <label class="top">Storm Severity (1 to 10) <input type="range" id="range" name="stormRange" min="0" max="10" step="1"></label>
                 <label class="top">Storm Region
                     <select name="region">
                         <option value="">Please Select</option>
@@ -67,14 +67,14 @@
                     </select>
                 </label>
                 <div>Are you in Danger?</div>
-                <label class="top"><input type="radio" name="danger" value="yes"> Yes</label>
-                <label class="top"><input type="radio" name="danger" value="maybe"> Maybe</label>
-                <label class="top"><input type="radio" name="danger" value="no"> No</label>
+                <label class="top"><input type="radio" name="danger" value="yes">   Yes</label>
+                <label class="top"><input type="radio" name="danger" value="maybe">   Maybe</label>
+                <label class="top"><input type="radio" name="danger" value="no">     No</label>
             </fieldset>
 
             <fieldset>
                 <legend>Additional Information</legend>
-                <label class="top"><textarea name="comments" value="Enter comments here:"></textarea></label>
+                <label class="top">Enter Comments Here:<textarea name="comments"></textarea></label>
             </fieldset>
 
             <input type="submit" value="Report a Storm" class="submitButton">
