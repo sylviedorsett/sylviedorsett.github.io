@@ -333,6 +333,11 @@ form label.top input, form label.top select, textarea{
 
 form label.sbs {
     display: block;
+    font-size: 1rem;
+}
+
+.sbs input {
+    margin-right: .5rem;
 }
 
 form input.submitButton {
