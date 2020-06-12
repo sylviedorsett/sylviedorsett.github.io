@@ -30,3 +30,7 @@ function toggleMenu() {
 var dateString = dayNames[day] + ", " + monthNames[month] + " " + date + ", " + currentYear; 
 document.getElementById("currentDate").innerHTML = dateString;
 
+/* This is the js for the range on the Storm Center Page*/
+function adjustRange(rate) {
+    document.getElementById("rangeValue").innerHTML = rate;
+}

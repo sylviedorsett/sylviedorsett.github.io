@@ -27,7 +27,7 @@
     <nav>
         <button class="ham" onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="navigation" class="response">
-            <li><a href="">Home</a></li>
+            <li><a href="preston-8.html">Home</a></li>
             <li><a href="preston-8.html">Preston</a></li>
             <li><a href="">Soda Springs</a></li>
             <li><a href="">Fish Haven</a></li>
@@ -40,7 +40,7 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Contact Information</legend>
-                <label class="top">Full Name* <input type="text" name="fullname" required></label>
+                <label class="top">Full Name* <input type="text" name="fullname" pattern="[A-Za-z]{5,}" required></label>
                 <label class="top">Phone* <input type="tel" name="phone" placeholder="555-555-5555" required></label>
                 <label class="top">Zip Code* <input type="number" name="zip" required></label>
                 <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
@@ -49,7 +49,7 @@
             <fieldset>
                 <legend>Storm Information</legend>
                 <label class="top">Storm Date <input type="date" name="completeDate"></label>
-                <label class="top">Storm Type <input list="storms" name="stormList"></label>
+                <label class="top" id="stormList">Storm Type <input list="storms" name="stormList"></label>
                 <datalist id="storms">
                     <option>Flash Flood</option>
                     <optiion>Hail</option>
@@ -57,27 +57,41 @@
                     <option>Thunderstorm</option>
                     <option>Tornado</option>
                 </datalist>
-                <label class="top">Storm Severity (1 to 10) <input type="range" id="range" name="stormRange" min="0" max="10" step="1"></label>
+                <label class="range">Storm Severity<span id="rangeValue">5</span><input type="range" name="stormRange" value="5" min="0" max="10" step="1" list="ticks" oninput="adjustRange(this.value)" onchange="adjustRange(this.value)"></label>
+                <datalist id="ticks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
                 <label class="top">Storm Region
                     <select name="region">
-                        <option value="">Please Select</option>
+                        <option value="" disabled selected>Please Select</option>
                         <option value="region">Preston</option>
                         <option value="region">Soda Springs</option>
                         <option value="region">Fish Haven</option>
                     </select>
                 </label>
                 <div>Are you in Danger?</div>
-                <label class="top"><input type="radio" name="danger" value="yes">   Yes</label>
-                <label class="top"><input type="radio" name="danger" value="maybe">   Maybe</label>
-                <label class="top"><input type="radio" name="danger" value="no">     No</label>
+                <label class="sbs"><input type="radio" name="danger" value="yes">   Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe">   Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no">     No</label>
             </fieldset>
 
             <fieldset>
                 <legend>Additional Information</legend>
                 <label class="top">Enter Comments Here:<textarea name="comments"></textarea></label>
             </fieldset>
-
-            <input type="submit" value="Report a Storm" class="submitButton">
+            <fieldset id="fieldButton">
+            <input type="submit" value="Report Weather" class="submitButton">
+            </fieldset>
         </form>
 
     </main>
