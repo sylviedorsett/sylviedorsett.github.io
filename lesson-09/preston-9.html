@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 Week 9 | Preston Page</title>
+    <meta name="description" content="Preston Town Page of Weather Website">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Trirong:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="banner">
+        <span>Saturday: Preston Pancakes in the Park! 9:00am Saturday at the city park pavilion.</span>
+    </div>
+    <header class="page-header">
+        <img src="images/rainorshineusalogo.jpg" alt="Website Logo">
+        <div id="headerDiv">
+            <h1>Rain or Shine USA</h1>
+            <h3>Weather when you need it.</h3>
+        </div>
+    </header>
+    <nav>
+        <button class="ham" onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navigation" class="response">
+            <li><a href="preston-9.html">Home</a></li>
+            <li class="active"><a href="preston-9.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div id="hero-container">
+            <picture>
+                <source srcset="images/prestontownimage700.jpg" media="(min-width: 625px) and (max-width: 1023px)">
+                <source srcset="images/prestontownimage900.jpg" media="(min-width: 1024px)">
+                <img class="hero-img" src="images/prestontownimage500.jpg" alt="Presto Town Photo">
+            </picture>
+            <!--credidation for public domain picture https://www.pexels.com/photo/scenic-view-of-agricultural-field-against-sky-during-sunset-325944/-->
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Partly Cloudy, 36°F</p>
+                <p>Today's High: <span id="temp">40</span>°F</p>
+                <p>Wind Chill: <span id="windChill"></span>°F</p>
+                <p>Humidity: 59%</p>
+                <p>Wind Speed: <span id="windSpeed">10</span>mph</p>
+            </section>
+        </div>
+
+        <div id="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                </tr>
+                <tr>
+                    <td><img src="images/sunicon.jpg" class="table-icon" alt="Sun Icon"><br>72°</td>
+                    <td><img src="images/sunicon.jpg" class="table-icon" alt="Sun Icon"><br>74°</td>
+                    <td><img src="images/windyicon.jpg" class="table-icon" alt="Windy Icon"><br>70°</td>
+                    <td><img src="images/rainicon.jpg" class="table-icon" alt="Rainy Icon"><br>66°</td>
+                    <td><img src="images/rainicon.jpg" class="table-icon" alt="Rainy Icon"><br>65°</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div id="article-div">
+            <h3><strong>Potato Festival</strong></h3>
+            <p><em>By Dottie Do-Good</em></p>
+            <p><img src="images/potatofestival.jpg" class="article-img" alt="Potato Festival">
+                <!--credidation for public domain picture https://www.pexels.com/photo/adult-business-commerce-cook-375889/-->
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio eius culpa iste, incidunt reiciendis fugit, ullam amet placeat quisquam accusamus natus obcaecati, iure sit. Laboriosam libero excepturi aliquam sed Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio eius culpa iste, incidunt reiciendis fugit, ullam amet placeat quisquam accusamus natus obcaecati, iure sit. Laboriosam libero excepturi aliquam sedLorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio eius culpa iste, incidunt reiciendis fugit, ullam amet placeat quisquam accusamus natus obcaecati, iure sit. Laboriosam libero excepturi aliquam sed</p>
+        </div>
+
+        <div id="contact-div">
+            <img src="images/preston.jpg" id="map" alt="Map of Preston">
+            <div class="contactInfo">
+                <h3>Rain or Shine USA</h3><br>
+                <p><span><img src="images/mapmarker.jpg" id="mapMarker"></span> 1234 Weather Ln</p>
+                <p>Preston, ID 83263</p><br>
+                <p>&#9742; 999-999-9999</p>
+                <p>&#x2709; rainorshineusa@rosusa.com</p>
+                <div class="socialMedia">
+                    <a href="www.facebook.com"><img src="images/facebookicon.jpg" alt="Facebook Icon"></a>
+                    <a href="www.twitter.com"><img src="images/twittericon.jpg" alt="Twitter Icon"></a>
+                    <a href="www.instagram.com"><img src="images/instagramicon.jpg" alt="Instagram Icon"></a>
+                    <a href="www.youtube.com"><img src="images/youtubeicon.jpg" alt="YouTube Icon"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year">The Weather Site</span> | Attributions | Sylvie Dorsett</p>
+        <p><span id="currentDate"></span></p>
+    </footer>
+
+    <script src="js/banner.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+</html>
