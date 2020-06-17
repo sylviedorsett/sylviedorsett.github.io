@@ -1,0 +1,60 @@
+body {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Trirong";
+    background-color: #4F5D75;
+    padding: 1rem;
+}
+
+section {
+    margin: 1rem auto;
+    padding: 2rem;
+    background-color: #bfc0c0;
+    color: #2D3142;
+    border: 4px solid #ef8354;
+    border-radius: 4px;
+    max-width: 275px;
+}
+
+section img {
+    height: 250px;
+    border-radius: 4px;
+    box-shadow: 10px 10px 10px #777;
+}
+
+footer {
+    margin: 1rem;
+}
+
+@media (min-width: 735px) {
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+        padding: 1.5rem;
+        margin: 0 auto;
+    }
+
+    section {
+        width: 250px;
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 1200px) {
+    div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    section {
+        width: 100%;
+        max-width: 200px;
+        margin: .5rem;
+    }
+
+    section img {
+        height: 200px;
+        margin: auto;
+    }
+
+}
