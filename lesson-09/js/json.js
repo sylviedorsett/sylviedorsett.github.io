@@ -11,17 +11,18 @@ fetch(requestURL)
         const fishHaven = towns.filter(town => (town.name == 'Fish Haven'));
 
         preston.forEach(town => {
-            let divs = document.createElement('div');
+            let div1 = document.createElement('div');
+            let div2 = document.createElement('div');
             let image = document.createElement('img'); 
             let sect = document.createElement('section');
-            let h3 = document.createElement('h3');
+            let h2 = document.createElement('h2');
             let p1 = document.createElement('p');
             let p2 = document.createElement('p');
             let p3 = document.createElement('p'); 
             let p4 = document.createElement('p');
 
-            h3.innerHTML = `${town.name}`;
-            p1.innerHTML = `${town.motto}`;
+            h2.innerHTML = `${town.name}`;
+            p1.innerHTML = `"<em>${town.motto}</em>"`;
             p2.innerHTML = `Year Founded: ${town.yearFounded}`;
             p3.innerHTML = `Current Population: ${town.currentPopulation}`;
             p4.innerHTML = `Average Rainfall in Inches: ${town.averageRainfall}`;
@@ -29,28 +30,30 @@ fetch(requestURL)
             image.setAttribute('src', `images/${town.photo}`);
             image.setAttribute('alt', `images/${town.photo}`);
 
-            divs.appendChild(image);
-            divs.appendChild(sect);
-            sect.appendChild(h3);
+            div1.appendChild(div2);
+            div2.appendChild(image);
+            div1.appendChild(sect);
+            sect.appendChild(h2);
             sect.appendChild(p1);
             sect.appendChild(p2);
             sect.appendChild(p3);
             sect.appendChild(p4);
-            document.querySelector('div.jsonDivs').appendChild(divs);
+            document.querySelector('div.jsonDivs').appendChild(div1);
         });
 
         sodaSprings.forEach(town => {
-            let divs = document.createElement('div');
+            let div1 = document.createElement('div');
+            let div2 = document.createElement('div');;
             let image = document.createElement('img'); 
             let sect = document.createElement('section');
-            let h3 = document.createElement('h3');
+            let h2 = document.createElement('h2');
             let p1 = document.createElement('p');
             let p2 = document.createElement('p');
             let p3 = document.createElement('p'); 
             let p4 = document.createElement('p');
 
-            h3.innerHTML = `${town.name}`;
-            p1.innerHTML = `${town.motto}`;
+            h2.innerHTML = `${town.name}`;
+            p1.innerHTML = `"<em>${town.motto}</em>"`;
             p2.innerHTML = `Year Founded: ${town.yearFounded}`;
             p3.innerHTML = `Current Population: ${town.currentPopulation}`;
             p4.innerHTML = `Average Rainfall in Inches: ${town.averageRainfall}`;
@@ -58,28 +61,30 @@ fetch(requestURL)
             image.setAttribute('src', `images/${town.photo}`);
             image.setAttribute('alt', `images/${town.photo}`);
 
-            divs.appendChild(image);
-            divs.appendChild(sect);
-            sect.appendChild(h3);
+            div1.appendChild(div2);
+            div2.appendChild(image);
+            div1.appendChild(sect);
+            sect.appendChild(h2);
             sect.appendChild(p1);
             sect.appendChild(p2);
             sect.appendChild(p3);
             sect.appendChild(p4);
-            document.querySelector('div.jsonDivs').appendChild(divs);
+            document.querySelector('div.jsonDivs').appendChild(div1);
         });
 
         fishHaven.forEach(town => {
-            let divs = document.createElement('div');
+            let div1 = document.createElement('div');
+            let div2 = document.createElement('div');
             let image = document.createElement('img'); 
             let sect = document.createElement('section');
-            let h3 = document.createElement('h3');
+            let h2 = document.createElement('h2');
             let p1 = document.createElement('p');
             let p2 = document.createElement('p');
             let p3 = document.createElement('p'); 
             let p4 = document.createElement('p');
 
-            h3.innerHTML = `${town.name}`;
-            p1.innerHTML = `${town.motto}`;
+            h2.innerHTML = `${town.name}`;
+            p1.innerHTML = `"<em>${town.motto}</em>"`;
             p2.innerHTML = `Year Founded: ${town.yearFounded}`;
             p3.innerHTML = `Current Population: ${town.currentPopulation}`;
             p4.innerHTML = `Average Rainfall in Inches: ${town.averageRainfall}`;
@@ -87,14 +92,15 @@ fetch(requestURL)
             image.setAttribute('src', `images/${town.photo}`);
             image.setAttribute('alt', `images/${town.photo}`);
 
-            divs.appendChild(image);
-            divs.appendChild(sect);
-            sect.appendChild(h3);
+            div1.appendChild(div2);
+            div2.appendChild(image);
+            div1.appendChild(sect);
+            sect.appendChild(h2);
             sect.appendChild(p1);
             sect.appendChild(p2);
             sect.appendChild(p3);
             sect.appendChild(p4);
-            document.querySelector('div.jsonDivs').appendChild(divs);
+            document.querySelector('div.jsonDivs').appendChild(div1);
         });
     });
 

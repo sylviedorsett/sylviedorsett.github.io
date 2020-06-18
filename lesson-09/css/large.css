@@ -61,4 +61,38 @@
         margin-top: 2rem;
         margin-bottom: 1.5rem;
     }
+
+    /*CSS for Home Page in Large View*/
+
+    .jsonDivs {
+        flex-direction: row;
+        margin: 0 1rem;
+        padding: 0;
+    }
+
+    .jsonDivs div {
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .jsonDivs div:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .jsonDivs div:nth-child(odd) section {
+        margin: 0;
+    }
+
+    .jsonDivs div:nth-child(even) section {
+        margin: 0;
+    }
+
+    .jsonDivs div div {
+        padding: 0;
+    }
+
+    .jsonDivs img {
+        height: 200px;
+    }
 }

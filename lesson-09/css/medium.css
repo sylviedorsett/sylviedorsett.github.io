@@ -110,4 +110,43 @@
     .pic-img {
         height: 225px;
     }
+
+    /*CSS for Home Page in Medium View*/
+
+    .jsonDivs {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .jsonDivs div {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto 2rem;
+    }
+
+    .jsonDivs div:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .jsonDivs div:nth-child(odd) section {
+        margin-right: 2rem;
+    }
+
+    .jsonDivs div:nth-child(even) section {
+        margin-left: 2rem;
+    }
+
+    div section {
+        padding: 1rem;
+        align-self: center;
+    }
+   .jsonDivs div div {
+       height: 50%;
+       margin: auto;
+   }
+
+    .jsonDivs img {
+        border-radius: 4px;
+    }
 }
