@@ -372,3 +372,10 @@ form label.top input:required:valid {
 input:focus {
 	box-shadow: 0 0 10px #ccc;
 }
+
+/*CSS for Home Page*/
+
+#footerLink {
+    color: #88D498;
+    font-style: italic;
+}

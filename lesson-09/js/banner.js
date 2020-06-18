@@ -34,3 +34,4 @@ document.getElementById("currentDate").innerHTML = dateString;
 function adjustRange(rate) {
     document.getElementById("rangeValue").innerHTML = rate;
 }
+
