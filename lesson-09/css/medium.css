@@ -113,27 +113,27 @@
 
     /*CSS for Home Page in Medium View*/
 
-    .jsonDivs {
+    .jsonDiv {
         display: flex;
         flex-direction: column;
         padding: 2rem;
     }
 
-    .jsonDivs div {
+    .jsonDiv div {
         display: flex;
         flex-direction: row;
-        margin: 0 auto 2rem;
+        margin: 0 2rem 2rem;
     }
 
-    .jsonDivs div:nth-child(odd) {
+    .jsonDiv div:nth-child(odd) {
         flex-direction: row-reverse;
     }
 
-    .jsonDivs div:nth-child(odd) section {
+    .jsonDiv div:nth-child(odd) section {
         margin-right: 2rem;
     }
 
-    .jsonDivs div:nth-child(even) section {
+    .jsonDiv div:nth-child(even) section {
         margin-left: 2rem;
     }
 
@@ -141,12 +141,12 @@
         padding: 1rem;
         align-self: center;
     }
-   .jsonDivs div div {
+   .jsonDiv div div {
        height: 50%;
        margin: auto;
    }
 
-    .jsonDivs img {
+    .jsonDiv img {
         border-radius: 4px;
     }
 }

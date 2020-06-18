@@ -380,7 +380,7 @@ input:focus {
     font-style: italic;
 }
 
-.jsonDivs div {
+.jsonDiv div {
     margin: 2rem auto 0;
 }
 
@@ -389,11 +389,11 @@ div section {
     padding-bottom: 2rem;
 }
 
-.jsonDivs h2 {
+.jsonDiv h2 {
     font-family: "Trirong";
 }
 
-.jsonDivs img {
+.jsonDiv img {
     width: 100%;
     border: 4px solid #114B5F;
     box-sizing: border-box;

@@ -64,35 +64,35 @@
 
     /*CSS for Home Page in Large View*/
 
-    .jsonDivs {
+    .jsonDiv {
         flex-direction: row;
         margin: 0 1rem;
         padding: 0;
     }
 
-    .jsonDivs div {
+    .jsonDiv div {
         flex-direction: column;
         margin: 0 auto;
         padding: 0 1rem;
     }
 
-    .jsonDivs div:nth-child(odd) {
+    .jsonDiv div:nth-child(odd) {
         flex-direction: column;
     }
 
-    .jsonDivs div:nth-child(odd) section {
+    .jsonDiv div:nth-child(odd) section {
         margin: 0;
     }
 
-    .jsonDivs div:nth-child(even) section {
+    .jsonDiv div:nth-child(even) section {
         margin: 0;
     }
 
-    .jsonDivs div div {
+    .jsonDiv div div {
         padding: 0;
     }
 
-    .jsonDivs img {
+    .jsonDiv img {
         height: 200px;
     }
 }

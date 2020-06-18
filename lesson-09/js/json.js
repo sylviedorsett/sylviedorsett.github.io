@@ -38,7 +38,7 @@ fetch(requestURL)
                 sect.appendChild(p3);
                 sect.appendChild(p4);
 
-                document.querySelector('div.jsonDivs').appendChild(div1);
+                document.querySelector('div.jsonDiv').appendChild(div1);
             }
         });
     });
