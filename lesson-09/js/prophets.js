@@ -35,14 +35,6 @@ fetch(requestURL)
         .then(response => response.json())
         .then(data => console.log(data));   
 
-    can use a forEach using arrow function syntax like this instead of the for loop:
-    const utah = prophets.filter(prophet => (prophet.birthplace == 'Utah));
-    utah.forEach(prophet => {
-        let card = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let p1 = document.createElement('p');
-    })  
-
     using backticks newer and easier/cleaner way for concatenation:
     - `${prophet.name} ${prophet.lastname}`;
 */

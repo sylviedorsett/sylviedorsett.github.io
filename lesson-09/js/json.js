@@ -9,7 +9,6 @@ fetch(requestURL)
         const preston = towns.filter(town => (town.name == 'Preston'));
         const sodaSprings = towns.filter(town => (town.name == 'Soda Springs'));
         const fishHaven = towns.filter(town => (town.name == 'Fish Haven'));
-        console.log(preston, sodaSprings, fishHaven);
 
         preston.forEach(town => {
             let divs = document.createElement('div');
@@ -24,10 +23,11 @@ fetch(requestURL)
             h3.innerHTML = `${town.name}`;
             p1.innerHTML = `${town.motto}`;
             p2.innerHTML = `Year Founded: ${town.yearFounded}`;
-            p3.InnerHTML = `Current Population: ${town.currentPopulation}`;
+            p3.innerHTML = `Current Population: ${town.currentPopulation}`;
             p4.innerHTML = `Average Rainfall in Inches: ${town.averageRainfall}`;
-            image.setAttribute('src', town.photo);
-            image.setAttribute('alt', town.photo);
+            image.innerHTML = town.photo;
+            image.setAttribute('src', `images/${town.photo}`);
+            image.setAttribute('alt', `images/${town.photo}`);
 
             divs.appendChild(image);
             divs.appendChild(sect);
@@ -52,10 +52,11 @@ fetch(requestURL)
             h3.innerHTML = `${town.name}`;
             p1.innerHTML = `${town.motto}`;
             p2.innerHTML = `Year Founded: ${town.yearFounded}`;
-            p3.InnerHTML = `Current Population: ${town.currentPopulation}`;
+            p3.innerHTML = `Current Population: ${town.currentPopulation}`;
             p4.innerHTML = `Average Rainfall in Inches: ${town.averageRainfall}`;
-            image.setAttribute('src', town.photo);
-            image.setAttribute('alt', town.photo);
+            image.innerHTML = town.photo;
+            image.setAttribute('src', `images/${town.photo}`);
+            image.setAttribute('alt', `images/${town.photo}`);
 
             divs.appendChild(image);
             divs.appendChild(sect);
@@ -80,10 +81,11 @@ fetch(requestURL)
             h3.innerHTML = `${town.name}`;
             p1.innerHTML = `${town.motto}`;
             p2.innerHTML = `Year Founded: ${town.yearFounded}`;
-            p3.InnerHTML = `Current Population: ${town.currentPopulation}`;
+            p3.innerHTML = `Current Population: ${town.currentPopulation}`;
             p4.innerHTML = `Average Rainfall in Inches: ${town.averageRainfall}`;
-            image.setAttribute('src', town.photo);
-            image.setAttribute('alt', town.photo);
+            image.innerHTML = town.photo;
+            image.setAttribute('src', `images/${town.photo}`);
+            image.setAttribute('alt', `images/${town.photo}`);
 
             divs.appendChild(image);
             divs.appendChild(sect);
