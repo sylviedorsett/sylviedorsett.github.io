@@ -1,65 +1,38 @@
 const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
-
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
-        
-        document.getElementById('current-temp').textContent = jsObject.main.temp;
-        const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`; 
-        const desc = jsObject.weather[0].description; 
-        document.getElementById('imagesrc').textContent = imagesrc; 
-        document.getElementById('icon').setAttribute('src', imagesrc); 
-        document.getElementById('icon').setAttribute('alt', desc);
+        document.getElementById('currentTemp').textContent = Math.floor(jsObject.main.temp);
+        document.getElementById('temp').textContent = Math.floor(jsObject.main.temp_max);
+        document.getElementById('humidity').textContent = jsObject.main.humidity;
+        document.getElementById('windSpeed').textContent = Math.ceil(jsObject.wind.speed);
     });
 
-
-/*const cityList = "http://bulk.openweathermap.org/sample/";
-
-fetch(cityList)
+const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
+fetch(forecastURL)
     .then((response) => response.json())
-    .then((jsObject) => {
-        const city = jsObject['city'];
+    .then((jsonObject) => {
+        const fiveDay = jsonObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+        console.log(fiveDay);
 
-        city.forEach(cities => {
-            if (cities.name == 'Preston' || cities.name == 'Soda Springs' || town.name == 'Fish Haven') {
-                console.log(cities.id);
-            }
+        const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        let day = 0;
+        let i = 0;
+
+        fiveDay.forEach(forecast => {
+            let date = forecast.dt_txt;
+            let d = new Date(date).getDay();
+            let f = forecast.main.temp;
+            const icon = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
+
+            console.log(icon);
+
+            document.getElementById(`day${day+1}`).textContent = weekdays[d];
+            document.getElementById(`forecast${day+1}`).textContent = Math.floor(f);
+            document.getElementById(`imagesrc${day+1}`).setAttribute('alt', forecast.weather[0].description);
+            document.getElementById(`imagesrc${day+1}`).setAttribute('src', icon);
+            day++;
+            d++;
+            i++;
         })
-    })
-
-
-
-const currentTemp = document.querySelector('#current-temp');
-
-currentTemp.textContent = jsObject.main.temp;
-
-const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-const desc = jsObject.weather[0].description;
-
-icon.setAttribute('src', imagesrc);
-icon.setAttribute("alt", desc);
-
-});
-
-cons apiURL = 
-
-fetch(apiURL)
-.then((response) => response.json())
-.then((jsObject) => {
-console.log(jsObject);
-
-const fivedayforecast = jsObject.list filter(x => x.dt_txt.includes('12:00:00'));
-
-console.log(fivedayforecast);
-
-const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Th'z];
-
-let day = 0;
-fivedayforecast.forEach(forecast => {
-    let d = new Date(forecast.dt_txt);
-    document.getElementById(`forecast${day+1}`).textContent = forecast.main.temp;
-    document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
-    day++;
     });
-});*/

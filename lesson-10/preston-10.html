@@ -46,11 +46,11 @@
             <!--credidation for public domain picture https://www.pexels.com/photo/scenic-view-of-agricultural-field-against-sky-during-sunset-325944/-->
             <section class="summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: Partly Cloudy, 36°F</p>
-                <p>Today's High: <span id="temp">40</span>°F</p>
-                <p>Wind Chill: <span id="windChill"></span>°F</p>
-                <p>Humidity: 59%</p>
-                <p>Wind Speed: <span id="windSpeed">10</span>mph</p>
+                <p>Currently: <span id="current"></span><span id="currentTemp"></span>° F</p>
+                <p>Today's High: <span id="temp"></span>°F</p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
             </section>
         </div>
 
@@ -58,18 +58,18 @@
             <h3>5 Day Forecast</h3>
             <table>
                 <tr>
-                    <th>MON</th>
-                    <th>TUE</th>
-                    <th>WED</th>
-                    <th>THU</th>
-                    <th>FRI</th>
+                    <th><span id='day1'></span></th>
+                    <th><span id='day2'></span></th>
+                    <th><span id='day3'></span></th>
+                    <th><span id='day4'></span></th>
+                    <th><span id='day5'></span></th>
                 </tr>
                 <tr>
-                    <td><img src="images/sunicon.jpg" class="table-icon" alt="Sun Icon"><br>72°</td>
-                    <td><img src="images/sunicon.jpg" class="table-icon" alt="Sun Icon"><br>74°</td>
-                    <td><img src="images/windyicon.jpg" class="table-icon" alt="Windy Icon"><br>70°</td>
-                    <td><img src="images/rainicon.jpg" class="table-icon" alt="Rainy Icon"><br>66°</td>
-                    <td><img src="images/rainicon.jpg" class="table-icon" alt="Rainy Icon"><br>65°</td>
+                    <td class="table-icon"><span id="forecast1"></span>°F<img id="imagesrc1" src="" alt=""></td>
+                    <td class="table-icon"><span id="forecast2"></span>°F<img id="imagesrc2" src="" alt=""></td>
+                    <td class="table-icon"><span id="forecast3"></span>°F<img id="imagesrc3" src="" alt=""></td>
+                    <td class="table-icon"><span id="forecast4"></span>°F<img id="imagesrc4" src="" alt=""></td>
+                    <td class="table-icon"><span id="forecast5"></span>°F<img id="imagesrc5" src="" alt=""></td>
                 </tr>
             </table>
 
@@ -101,11 +101,12 @@
         </div>
     </main>
     <footer>
-        <p>&copy; <span id="year">The Weather Site</span> | Attributions | Sylvie Dorsett</p>
+        <p>&copy; <span id="year">The Weather Site</span> | Attributions: OpenWeatherMap is an open weather data source licensed by Open Data Commons Open Database License (ODbL). This service is provided under Creative Commons Attribution-ShareAlike 4.0 International license (CC BY-SA 4.0). The original version can be found <a href="https://openweathermap.org/">here</a>.| Sylvie Dorsett</p>
         <p><span id="currentDate"></span></p>
     </footer>
 
     <script src="js/banner.js"></script>
+    <script src="js/weatherapi.js"></script>
     <script src="js/windchill.js"></script>
 </body>
 </html>
