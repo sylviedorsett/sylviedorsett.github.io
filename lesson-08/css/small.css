@@ -372,3 +372,8 @@ form label.top input:required:valid {
 input:focus {
 	box-shadow: 0 0 10px #ccc;
 }
+
+h3.stormHead3 {
+    text-align: center;
+    color: #114B5F;
+}
