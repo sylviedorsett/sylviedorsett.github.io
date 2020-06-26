@@ -6,7 +6,7 @@ fetch(apiURL)
         document.getElementById('temp').textContent = Math.floor(jsObject.main.temp_max);
         document.getElementById('humidity').textContent = jsObject.main.humidity;
         document.getElementById('windSpeed').textContent = Math.ceil(jsObject.wind.speed);
-        console.log(jsObject);
+
         var t = parseFloat(document.getElementById("temp").innerHTML);
         var s = parseFloat(document.getElementById("windSpeed").innerHTML);
         var chill = 35.74 + .6215 * t - 35.75 * Math.pow(s, .16) +  .4275 * t * Math.pow(s, .16);
@@ -22,7 +22,7 @@ const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473
 fetch(forecastURL)
     .then((response) => response.json())
     .then((jsonObject) => {
-        console.log(jsonObject);
+
         const fiveDay = jsonObject.list.filter(x => x.dt_txt.includes('18:00:00'));
         console.log(fiveDay);
 
