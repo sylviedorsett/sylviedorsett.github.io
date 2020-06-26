@@ -16,8 +16,7 @@ fetch(forecastURL)
         console.log(fiveDay);
 
         const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        let day = 0;
-        let i = 0;
+        let day = 1;
 
         fiveDay.forEach(forecast => {
             let date = forecast.dt_txt;
@@ -27,12 +26,11 @@ fetch(forecastURL)
 
             console.log(icon);
 
-            document.getElementById(`day${day+1}`).textContent = weekdays[d];
-            document.getElementById(`forecast${day+1}`).textContent = Math.floor(f);
-            document.getElementById(`imagesrc${day+1}`).setAttribute('alt', forecast.weather[0].description);
-            document.getElementById(`imagesrc${day+1}`).setAttribute('src', icon);
+            document.getElementById(`day${day}`).textContent = weekdays[d];
+            document.getElementById(`forecast${day}`).textContent = Math.floor(f);
+            document.getElementById(`imagesrc${day}`).setAttribute('alt', forecast.weather[0].description);
+            document.getElementById(`imagesrc${day}`).setAttribute('src', icon);
             day++;
             d++;
-            i++;
         })
     });
