@@ -6,7 +6,7 @@ fetch(apiURL)
         document.getElementById('temp').textContent = Math.floor(jsObject.main.temp_max);
         document.getElementById('humidity').textContent = jsObject.main.humidity;
         document.getElementById('windSpeed').textContent = Math.ceil(jsObject.wind.speed);
-    
+        console.log(jsObject);
         var t = parseFloat(document.getElementById("temp").innerHTML);
         var s = parseFloat(document.getElementById("windSpeed").innerHTML);
         var chill = 35.74 + .6215 * t - 35.75 * Math.pow(s, .16) +  .4275 * t * Math.pow(s, .16);
