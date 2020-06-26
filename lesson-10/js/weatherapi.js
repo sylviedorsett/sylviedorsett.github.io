@@ -33,7 +33,7 @@ fetch(forecastURL)
             let date = forecast.dt_txt;
             let d = new Date(date).getDay();
             let f = forecast.main.temp;
-            const icon = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
+            const icon = `http://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
 
             console.log(icon);
 
