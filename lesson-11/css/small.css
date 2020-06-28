@@ -249,6 +249,9 @@ footer p {
     margin: 2rem auto;
     max-width: 400px;
     color: #F3E9D2;
+    text-align: center;
+    font-family: "Trirong";
+    justify-content: center;
 }
 
 .pic-img {
@@ -256,15 +259,11 @@ footer p {
     width: 100%;
     filter: blur(0em);
     transition: filter 1s;
+    margin-bottom: 1rem;
 }
 
 img[data-src] {
     filter: blur(.2em);
-}
-
-picture p {
-    text-align: center;
-    font-family: "Trirong";
 }
 
 #galleryH2 {
