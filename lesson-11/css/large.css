@@ -1,0 +1,105 @@
+@media (min-width: 1024px) {
+  
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #F3E9D2;
+    }
+
+    header {
+        padding: 1.5rem;
+        font-size: 36pt;
+    }
+
+    header h3 {
+        font-size: 18pt;
+        margin-top: -5px;
+    }
+
+    header img {
+        margin: .5rem;
+    }
+
+    .hero-img {
+        border-radius: 5px;
+    }
+
+    nav {
+        font-size: 18pt;
+    }
+    
+    main {
+        font-size: 14pt;
+        min-width: 900px;
+        max-width: 900px;
+        align-self: center;
+        padding: 1.5rem;
+        background-color: #88D498;
+    }
+
+    .article-img {
+        max-width: 450px;
+    }
+
+    footer {
+        max-width: 900px;
+        min-width: 900px;
+        align-self: center;
+    }
+
+    /*CSS for Gallery Page in Large View*/
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    picture:hover {
+        box-shadow: 0 0 40px #114B5F;
+    }
+
+    #galleryH2 {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /*CSS for Home Page in Large View*/
+
+    .jsonDiv {
+        flex-direction: row;
+        margin: 0 1rem;
+        padding: 0;
+    }
+
+    .jsonDiv div {
+        flex-direction: column;
+        margin: 0 5px;
+        padding: 1rem;
+    }
+
+    .jsonDiv div:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .jsonDiv div:nth-child(odd) section {
+        margin: 0;
+    }
+
+    .jsonDiv div:nth-child(even) section {
+        margin: 0;
+    }
+
+    .jsonDiv div div {
+        padding: 0;
+        height: 200px;
+        margin: 0;
+    }
+
+    .jsonDiv img {
+        height: 100%;
+    }
+
+    .jsonSection {
+        width: 100%;
+    }
+
+}

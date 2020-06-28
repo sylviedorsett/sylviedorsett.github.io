@@ -1,0 +1,413 @@
+html {
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+body {
+    background-color: #88D498;
+    color: #114B5F;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+ 
+}
+
+/*Banner Display*/
+
+#banner {
+    text-align: center;
+    font-family: "Trirong";
+    font-size: 1.25rem;
+    padding: .5rem;
+    background-color: #F3E9D2;
+}
+
+/*Header CSS*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: #114B5F;
+    padding: .5rem;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    margin: 1.5rem 0;
+}
+
+#headerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+header h1, h3 {
+    margin: 0;
+    padding: .5rem;
+    color: #F3E9D2;
+    font-family: "Trirong", cursive;
+}
+header h1 {
+    font-size: 18pt;
+}
+
+header h3 {
+    font-size: 11pt;
+    margin-top: -10px;
+}
+
+
+/*Navigation CSS*/
+
+nav {
+    background-color: #1A9364;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+nav button {
+    margin: .2rem auto;
+    padding: .8rem 15px;
+    background-color: transparent;
+    border: none;
+    color: #F3E9D2;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+}
+
+nav ul {
+    padding: 2rem;
+}
+
+ nav ul.response {
+    display: none;
+}
+
+nav li {
+    display: block;
+    padding: .8rem 15px;
+    text-align: left;
+    text-decoration: none;
+    color: #F3E9D2;
+    border-top: 1px solid rgba(17, 75, 95, 0.5);
+    flex: 1 1 100%;
+    min-height: 100%;
+}
+
+nav ul li a {
+    color: #F3E9D2;
+    text-decoration: none;
+}
+
+nav ul li.active {
+    background-color: rgba(17, 75, 95, 0.7);
+    color: #114B5F;
+}
+
+li:hover {
+    background-color: #114B5F;
+}
+
+/* Main CSS */
+
+h2 {
+    text-align: center;
+}
+
+#hero-container {
+    position: relative;
+}
+
+.hero-img {
+    border: 2px solid #114B5F;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section h3 {
+    color: #114B5F;
+}
+
+.summary {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #F3E9D2;
+    border: 2px solid #114B5F;
+    border-radius: 5px;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+    line-height: 1;
+}
+
+#forecast {
+    display: none;
+}
+
+#article-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: block;
+    background-color: #1A9364;
+    margin: 2rem;
+    padding: 2rem;
+    color: #F3E9D2;
+    border-radius: 5px;
+}
+
+.article-img {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #114B5F;
+    border-radius: 5px;
+    box-shadow: 0 0 30px #777;
+    width: 100%;
+}
+
+#article-div h3 {
+    font-size: 1.75rem;
+    margin-bottom: -20px;
+}
+
+#contact-div {
+    display:flex;
+    flex-direction: row;
+    background-color: #1A9364;
+    margin: 2rem;
+    padding: 2rem;
+    color: #F3E9D2;
+    border-radius: 5px;
+}
+
+.contactInfo {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+.contactInfo p {
+    margin-top: -10px;
+}
+
+#map {
+    display: none;
+}
+
+#mapMarker {
+    width: 25px;
+    margin-bottom: -5px;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction:  row;
+}
+
+/* Footer CSS */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #114B5F;
+    color: #F3E9D2;
+    font-size: 16px;
+    padding: 1.5rem;
+    border-radius: 0 0 5px 5px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/*CSS for Gallery Page*/
+
+.picture-div {
+    display: block;
+    background-color: #114B5F;
+    border: 4px solid #F3E9D2;
+    border-radius: 4px;
+    margin: 2rem auto;
+    max-width: 400px;
+}
+
+.pic-img {
+    box-sizing: border-box;
+    width: 100%;
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+img[data-src] {
+    filter: blur(.2em);
+}
+
+.gallery-div h3 {
+    text-align: center;
+}
+
+#galleryH2 {
+    margin-top: 2rem;
+    margin-bottom: -.5rem;
+}
+
+/*CSS for Storm Center Page*/
+
+form fieldset {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #114B5F;
+    border-radius: 5px;
+    padding: 1rem;
+    color: #114B5F;
+    width: 90%;
+    max-width: 30rem;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+
+form label.top {
+    display: block;
+    padding-top: .25rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+form div {
+    display: block;
+    padding-top: .25rem;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select, textarea{
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 5px;
+    color: #555;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    line-height: 1.2;
+}
+
+.range {
+    font-size: 1rem;
+}
+
+#rangeValue {
+    font-size: 1.25rem;
+    padding-left: 1rem;
+}
+
+.range input {
+    display: block;
+    border: none;
+    width: 21.75rem;
+    margin-bottom: .5rem;
+}
+
+form label.sbs {
+    display: block;
+    font-size: 1rem;
+}
+
+.sbs input {
+    margin-right: .5rem;
+}
+
+form input.submitButton {
+    border: none;
+    background-color: #114B5F;
+    color: #F3E9D2;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 20rem;
+    font-size: 1.25rem;
+    margin-left: -12px;
+}
+
+#fieldButton {
+    border: none;
+    margin: 1rem auto;
+    padding-left: 0;
+}
+
+textarea {
+    min-height: 10rem;
+}
+
+form label.top input:required {
+    border-left: red solid 5px;
+}
+
+form label.top input:required:valid {
+    border-left: none;
+}
+
+input:focus {
+	box-shadow: 0 0 10px #ccc;
+}
+
+#stormHead3 {
+    text-align: center;
+    color: #114B5F;
+}
+
+/*CSS for Home Page*/
+
+#footerLink {
+    color: #88D498;
+    font-style: italic;
+}
+
+.jsonDiv div {
+    margin: 0 auto;
+    padding: .5rem;
+}
+
+.jsonDiv>div {
+    border: 4px solid #114B5F;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+div section {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.jsonDiv h2 {
+    font-family: "Trirong";
+}
+
+.jsonDiv img {
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
