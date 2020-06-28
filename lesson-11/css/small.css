@@ -248,6 +248,7 @@ footer p {
     border-radius: 4px;
     margin: 2rem auto;
     max-width: 400px;
+    color: #F3E9D2;
 }
 
 .pic-img {
@@ -261,8 +262,9 @@ img[data-src] {
     filter: blur(.2em);
 }
 
-.gallery-div h3 {
+picture p {
     text-align: center;
+    font-family: "Trirong";
 }
 
 #galleryH2 {
