@@ -56,7 +56,8 @@ fetch(requestURL)
                 div3.appendChild(h2);
                 div3.appendChild(p1);
 
-                document.querySelector('eventsDiv').appendChild(Div3);
+                document.querySelector('eventsPreston').appendChild(Div3);
+                document.querySelector('eventsFishhaven').appendChild()
             }
         });
     });
