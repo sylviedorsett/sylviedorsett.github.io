@@ -43,6 +43,22 @@ fetch(requestURL)
                 document.querySelector('div.jsonDiv').appendChild(div1);
             }
         });
+
+        towns.forEach( town => {
+            if (town.name == 'Preston' || town.name == 'Soda Springs' || town.name == 'Fish Haven') {
+                let div3 = document.createElement('div');
+                let h2 = document.createElement('h2');
+                let p1 = document.createElement('p');
+
+                h2.innerHTML = `Upcoming Events in ${town.name}`;
+                p1.innerHTML = town.events;
+
+                div3.appendChild(h2);
+                div3.appendChild(p1);
+
+                document.querySelector('eventsDiv').appendChild(Div3);
+            }
+        });
     });
 
 /*   using backticks newer and easier/cleaner way for concatenation - `${prophet.name} ${prophet.lastname}`; */
