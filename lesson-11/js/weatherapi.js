@@ -1,5 +1,6 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
-fetch(apiURL)
+//For Preston:
+const prestonapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
+fetch(prestonapiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         document.getElementById('currentTemp').textContent = Math.floor(jsObject.main.temp);
@@ -18,13 +19,13 @@ fetch(apiURL)
         }
     });
 
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
-fetch(forecastURL)
+const prestonforecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
+fetch(prestonforecastURL)
     .then((response) => response.json())
     .then((jsonObject) => {
 
         const fiveDay = jsonObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-        console.log(fiveDay);
+       // console.log(fiveDay);
 
         const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         let day = 1;
@@ -45,3 +46,7 @@ fetch(forecastURL)
             d++;
         })
     });
+//For SODA SPRINGS:
+
+
+//For Fish Haven:

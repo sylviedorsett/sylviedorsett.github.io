@@ -4,7 +4,7 @@ fetch(requestURL)
     .then(function(response) {
         return response.json();
     })
-    .then(function (jsonObject) {
+    .then(function(jsonObject) {
         const towns = jsonObject['towns']; //stores the results of converted response into an array
 
         towns.forEach(town => {
@@ -30,7 +30,6 @@ fetch(requestURL)
                 image.setAttribute('alt', `images/${town.photo}`);
                 sect.setAttribute('class', "jsonSection" )
 
-
                 div1.appendChild(div2);
                 div2.appendChild(image);
                 div1.appendChild(sect);
@@ -41,23 +40,6 @@ fetch(requestURL)
                 sect.appendChild(p4);
 
                 document.querySelector('div.jsonDiv').appendChild(div1);
-            }
-        });
-
-        towns.forEach( town => {
-            if (town.name == 'Preston' || town.name == 'Soda Springs' || town.name == 'Fish Haven') {
-                let div3 = document.createElement('div');
-                let h2 = document.createElement('h2');
-                let p1 = document.createElement('p');
-
-                h2.innerHTML = `Upcoming Events in ${town.name}`;
-                p1.innerHTML = town.events;
-
-                div3.appendChild(h2);
-                div3.appendChild(p1);
-
-                document.querySelector('eventsPreston').appendChild(Div3);
-                document.querySelector('eventsFishhaven').appendChild()
             }
         });
     });
