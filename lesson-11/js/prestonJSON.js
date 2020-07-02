@@ -15,10 +15,12 @@ fetch(requestURL)
     
                 let div1 = document.createElement('div');
                 let h3 = document.createElement('h3');
+                let hr = document.createElement('hr');
 
 
                 h3.innerHTML = `${town.name} Events:`;
                 div1.appendChild(h3);
+                div1.appendChild(hr);
                 
                 for (i in events) {
                     let p = document.createElement('p');
@@ -26,7 +28,7 @@ fetch(requestURL)
                     div1.appendChild(p);
                 }
 
-                document.querySelector('div.prestonEvents').appendChild(div1);
+                document.getElementById('prestonEvents').appendChild(div1);
             }
         });
     });
