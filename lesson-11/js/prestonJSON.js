@@ -4,7 +4,6 @@ fetch(prestonapiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         document.getElementById('currentTemp').textContent = Math.floor(jsObject.main.temp);
-        console.log(jsObject.main.temp);
         document.getElementById('temp').textContent = Math.floor(jsObject.main.temp_max);
         document.getElementById('humidity').textContent = jsObject.main.humidity;
         document.getElementById('windSpeed').textContent = Math.ceil(jsObject.wind.speed);
