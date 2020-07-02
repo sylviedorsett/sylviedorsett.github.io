@@ -1,5 +1,5 @@
-const prestonapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
-fetch(prestonapiURL)
+const fhapiURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.0381059&lon=-111.4005351&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
+fetch(fhapiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         document.getElementById('currentTemp').textContent = Math.floor(jsObject.main.temp);
@@ -18,13 +18,12 @@ fetch(prestonapiURL)
         }
     });
 
-const prestonforecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
-fetch(prestonforecastURL)
+const fhforecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0381059&lon=-111.4005351&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
+fetch(fhforecastURL)
     .then((response) => response.json())
     .then((jsonObject) => {
 
         const fiveDay = jsonObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-       // console.log(fiveDay);
 
         const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         let day = 1;
@@ -34,8 +33,6 @@ fetch(prestonforecastURL)
             let d = new Date(date).getDay();
             let f = forecast.main.temp;
             const icon = `http://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
-
-            console.log(icon);
 
             document.getElementById(`day${day}`).textContent = weekdays[d];
             document.getElementById(`forecast${day}`).textContent = Math.floor(f);
