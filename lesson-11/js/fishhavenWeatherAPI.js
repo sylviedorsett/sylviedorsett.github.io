@@ -1,5 +1,4 @@
-//For Preston:
-const prestonapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
+const prestonapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
 fetch(prestonapiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -19,7 +18,7 @@ fetch(prestonapiURL)
         }
     });
 
-const prestonforecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
+const prestonforecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
 fetch(prestonforecastURL)
     .then((response) => response.json())
     .then((jsonObject) => {
@@ -46,7 +45,4 @@ fetch(prestonforecastURL)
             d++;
         })
     });
-//For SODA SPRINGS:
 
-
-//For Fish Haven:
