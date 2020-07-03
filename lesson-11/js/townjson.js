@@ -1,7 +1,7 @@
 //Weather API
 let townweather = " ";
 let townName = document.getElementById('active').textContent;
-console.log(townName);
+
 if (townName == "Preston")  {
     townweather = "id=5604473";
 }

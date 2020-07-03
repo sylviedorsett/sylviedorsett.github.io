@@ -12,12 +12,15 @@ document.getElementById("year").innerHTML = currentYear;
 
 
 /* This is the js for the banner.*/
-const banner = document.getElementById("banner");
-if (day == 5) {
-     banner.style.display = "block";
-}
-else {
-    banner.style.display = "none";
+let prestonBanner = document.getElementById('active').textContent;
+if (prestonBanner == "Preston")  {
+    const banner = document.getElementById("banner");
+    if (day == 5) {
+        banner.style.display = "block";
+    }
+    else {
+        banner.style.display = "none";
+    }
 }
 
 /* This is the js for the hamburger menu.*/

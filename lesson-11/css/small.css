@@ -252,6 +252,10 @@ footer p {
     margin: 0;
 }
 
+#footerLink {
+    color: #F3E9D2;
+}
+
 /*CSS for Gallery Page*/
 
 .picture-div {
