@@ -1,5 +1,18 @@
 //Weather API
-const prestonapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
+let townweather = " ";
+let townName = document.getElementById('active').textContent;
+console.log(townName);
+if (townName == "Preston")  {
+    townweather = "id=5604473";
+}
+else if (townName == "Soda Springs") {
+    townweather = "id=5607916";
+}
+else if (townName == "Fish Haven") {
+    townweather = "lat=42.0381059&lon=-111.4005351";
+}
+
+const prestonapiURL = "https://api.openweathermap.org/data/2.5/weather?" + townweather + "&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
 fetch(prestonapiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -19,16 +32,18 @@ fetch(prestonapiURL)
         }
     });
 
-const prestonforecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
+const prestonforecastURL = "https://api.openweathermap.org/data/2.5/forecast?" + townweather + "&units=imperial&APPID=4491eb92629e7b5e0ac20b732e39129e";
 fetch(prestonforecastURL)
     .then((response) => response.json())
     .then((jsonObject) => {
 
+        //--CREATING A SMALLER JSON THAT IS FILTERED BY THE TIME - CONDENSING
         const fiveDay = jsonObject.list.filter(x => x.dt_txt.includes('18:00:00'));
 
         const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         let day = 1;
 
+        //--FOR EARCH ENTRY, A SINGLE ENTRY JSON IS CREATED NAMED FORECAST
         fiveDay.forEach(forecast => {
             let date = forecast.dt_txt;
             let d = new Date(date).getDay();
@@ -57,12 +72,14 @@ fetch(requestURL)
 
         towns.forEach(town => {
         
-            if (town.name == 'Preston') {
+            if (town.name == townName) {
 
                 const events = town.events;
+    
                 let div1 = document.createElement('div');
                 let h3 = document.createElement('h3');
                 let hr = document.createElement('hr');
+
 
                 h3.innerHTML = `${town.name} Events:`;
                 div1.appendChild(h3);
@@ -74,7 +91,8 @@ fetch(requestURL)
                     div1.appendChild(p);
                 }
 
-                document.getElementById('prestonEvents').appendChild(div1);
+
+                document.getElementById('eventsDiv').appendChild(div1);
             }
         });
     });
