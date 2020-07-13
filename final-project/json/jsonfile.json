@@ -15,7 +15,8 @@
         "resHalf": 30,
         "resFull": 40,
         "walkHalf": 35,
-        "walkFull": 45
+        "walkFull": 45,
+        "photo": "https://"
      },
      {
         "name": "Honda PCX150 Scooter",
@@ -23,7 +24,8 @@
         "resHalf": 40,
         "resFull": 50,
         "walkHalf": 45,
-        "walkFull": 55
+        "walkFull": 55,
+        "photo": "https://"
      },
      {
         "name": "Honda Pioneer ATV",
@@ -31,7 +33,8 @@
         "resHalf": 50,
         "resFull": 70,
         "walkHalf": 60,
-        "walkFull": 80
+        "walkFull": 80,
+        "photo": "https://"
      },
      {
         "name": "Jeep Wrangler - 4 door with a/c",
@@ -39,7 +42,8 @@
         "resHalf": 70,
         "resFull": 100,
         "walkHalf": 85,
-        "walkFull": 125
+        "walkFull": 125,
+        "photo": "https://"
      },
      {
         "name": "Jeep Wrangler - 2 door",
@@ -47,7 +51,8 @@
         "resHalf": 60,
         "resFull": 85,
         "walkHalf": 70,
-        "walkFull": 90
+        "walkFull": 90,
+        "photo": "https://"
      }
     ]
 }
