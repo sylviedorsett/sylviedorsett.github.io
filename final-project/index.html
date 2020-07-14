@@ -12,14 +12,75 @@
 </head>
 
 <body>
+    <header class="header">
+        <img src="images/logo.jpg" alt="~Scoots Logo">
+        <div id="headerDiv">
+            <h1>~Scoots</h1>
+            <h3>Life is an adventure; enjoy the ride!</h3>
+        </div>
+    </header>
+    <nav>
+        <button class="ham" onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navigation" class="response">
+            <li id="active"><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Home</h2>
+        <div>
+            <img src="images/scooterHomePage.jpg" alt="Woman on scooter.">
+            <img src="images/atvHomePage.jpg" alt="Couple on an ATV.">
+            <img src="images/jeepHomePage.jpg" alt="Jeep at the beach.">
+        </div>
+        <p>
 
-
-
+        </p>
+        <div id="imageContainer">
+            <picture>
+                <source srcset="images/cozumelBeach700.jpg" media="(min-width: 625px) and (max-width: 1023px)">
+                <source srcset="images/cozumelBeach900.jpg" media="(min-width: 1024px)">
+                <img class="container-img" src="images/cozumelBeach500.jpg" alt="Cozumel Beach Photo">
+            </picture>
+            <section class="weather">
+                <h3>Weather Summary</h3>
+                <p>Current Temperature: <span id="currentTemp"></span>° F</p>
+                <p>Currently: <span id="description"></span></p>
+                <p>Today's High: <span id="tempHigh"></span>°F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            </section>
+        </div>
+        <div id="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th><span id='day1'></span></th>
+                    <th><span id='day2'></span></th>
+                    <th><span id='day3'></span></th>
+                    <th><span id='day4'></span></th>
+                    <th><span id='day5'></span></th>
+                </tr>
+                <tr>
+                    <td class="table-icon"><span id="forecast1"></span>°F<img id="imagesrc1" src="https://sylviedorsett.github.io/lesson-11/images/spacerimage.jpg" alt="weather icon"></td>
+                    <td class="table-icon"><span id="forecast2"></span>°F<img id="imagesrc2" src="https://sylviedorsett.github.io/lesson-11/images/spacerimage.jpg" alt="weather icon"></td>
+                    <td class="table-icon"><span id="forecast3"></span>°F<img id="imagesrc3" src="https://sylviedorsett.github.io/lesson-11/images/spacerimage.jpg" alt="weather icon"></td>
+                    <td class="table-icon"><span id="forecast4"></span>°F<img id="imagesrc4" src="https://sylviedorsett.github.io/lesson-11/images/spacerimage.jpg" alt="weather icon"></td>
+                    <td class="table-icon"><span id="forecast5"></span>°F<img id="imagesrc5" src="https://sylviedorsett.github.io/lesson-11/images/spacerimage.jpg" alt="weather icon"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
     <footer>
         <p>&copy; <span id="year">~Scoots</span> | <a href="attributions.html">Attributions</a> | Sylvie Dorsett</p>
         <p><span id="currentDate"></span></p>
     </footer>
 
-    <script src="js/banner.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/weather.js"></script>
     <script src="js/json.js"></script>
 </body>
+</html>

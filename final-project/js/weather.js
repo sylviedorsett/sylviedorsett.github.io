@@ -17,7 +17,6 @@ fetch(forecastURL)
     .then((jsonObject) => {
     
         const fiveDay = jsonObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-        console.log(fiveDay);
     
         const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         let day = 1;
