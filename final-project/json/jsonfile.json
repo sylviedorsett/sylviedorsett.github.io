@@ -7,7 +7,7 @@
         "resFull": 30,
         "walkHalf": 25,
         "walkFull": 35,
-        "photo": "https://powersports.honda.com/street/scooter/metropolitan/-/media/products/family/metropolitan/trims/trim-main/metropolitan/2020/2020-metropolitan-coastal_blue-650x380.png"
+        "photo": "https://sylviedorsett.github.io/final-project/images/hondaMetroScooter.jpg"
      },
      {
         "name": "Honda Dio Scooter",
@@ -16,7 +16,7 @@
         "resFull": 40,
         "walkHalf": 35,
         "walkFull": 45,
-        "photo": "https://cdn.automote.co.nz/2/7/k2GdG1cY-dm8kWk.jpg"
+        "photo": "https://sylviedorsett.github.io/final-project/images/hondaDioScooter.jpg"
      },
      {
         "name": "Honda PCX150 Scooter",
@@ -25,7 +25,7 @@
         "resFull": 50,
         "walkHalf": 45,
         "walkFull": 55,
-        "photo": "https://powersports.honda.com/street/scooter/pcx150/-/media/products/family/pcx150/trims/trim-zoom/pcx150/2020/2020-pcx150x-candy_luster_red-1950x1140.jpg"
+        "photo": "https://sylviedorsett.github.io/final-project/images/hondaPCXScooter.jpg"
      },
      {
         "name": "Honda Pioneer ATV",
@@ -34,7 +34,7 @@
         "resFull": 70,
         "walkHalf": 60,
         "walkFull": 80,
-        "photo": "https://powersports.honda.com/sxs/recutility/-/media/products/family/pioneer-1000/trims/trim-main/pioneer-1000/2021/2021-pioneer-1000-red-650x380.png"
+        "photo": "https://sylviedorsett.github.io/final-project/images/hondaPioneer.jpg"
      },
      {
         "name": "Jeep Wrangler - 4 door with a/c",
@@ -43,7 +43,7 @@
         "resFull": 100,
         "walkHalf": 85,
         "walkFull": 125,
-        "photo": "https://www.jeep.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1r9s%25WBXaBKFmfKSLC9gIQALMc6UhVk3GBfM9IW2VRkr72kVid9pQswXGXQpMTV1rUp3g6OQCckPquBhS1U%25jzbTllxA0uvLl%250QFmwp8kpd2LHBoM&&pov=fronthero&width=1000&height=460&bkgnd=white&resp=jpg&cut=&x=&y=&w=&h="
+        "photo": "https://sylviedorsett.github.io/final-project/images/jeepWrangler4Door.jpg"
      },
      {
         "name": "Jeep Wrangler - 2 door",
@@ -52,7 +52,7 @@
         "resFull": 85,
         "walkHalf": 70,
         "walkFull": 90,
-        "photo": "https://www.jeep.com/mediaserver/iris?client=FCAUS&market=U&brand=J&vehicle=2020_JL&paint=PRC&fabric=&sa=JLJS72,2TR,22R,APA,D5,HT3&pov=E28&width=1200&height=400&bkgnd=white&resp=jpg&x=2000&y=2000&w=6000&h=6500"
+        "photo": "https://sylviedorsett.github.io/final-project/images/jeepWrangler2Door.jpg"
      }
     ]
 }

@@ -5,7 +5,7 @@ fetch(requestURL)
         return response.json();
     })
     .then(function(jsonObject) {
-        const towns = jsonObject['rentals']; //stores the results of converted response into an array
+        const towns = jsonObject['rentals']; 
 
         towns.forEach(rental => {
 
@@ -28,7 +28,7 @@ fetch(requestURL)
                 p5.innerHTML = `Full Day Walk-In: ${rental.walkFull}`;
                 image.innerHTML = rental.photo;
                 image.setAttribute('src', `images/${rental.photo}`);
-                image.setAttribute('alt', `images/${rental.photo}`);
+                image.setAttribute('alt', `images/${rental.name}`);
                 sect.setAttribute('class', "jsonSection")
 
                 div1.appendChild(div2);
