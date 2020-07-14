@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'https://sylviedorsett.github.io/final-project/json/jsonfile.json';
 
 fetch(requestURL)
     .then(function(response) {
@@ -28,7 +28,7 @@ fetch(requestURL)
                 p5.innerHTML = `Full Day Walk-In: ${rental.walkFull}`;
                 image.innerHTML = rental.photo;
                 image.setAttribute('src', `images/${rental.photo}`);
-                image.setAttribute('alt', `images/${town.photo}`);
+                image.setAttribute('alt', `images/${rental.photo}`);
                 sect.setAttribute('class', "jsonSection")
 
                 div1.appendChild(div2);
