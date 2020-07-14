@@ -4,10 +4,9 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         document.getElementById('currentTemp').textContent = Math.floor(jsObject.main.temp);
-        document.getElementById('description').textContent = jsObject.main.description;
+        document.getElementById('description').textContent = jsObject.weather[0].description;
         document.getElementById('tempHigh').textContent = Math.floor(jsObject.main.temp_max);
         document.getElementById('humidity').textContent = jsObject.main.humidity;
-        document.getElementById('windSpeed').textContent = Math.ceil(jsObject.wind.speed);
     });
 
 /* 5 Day Forecast */

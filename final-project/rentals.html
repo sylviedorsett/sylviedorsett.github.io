@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots Rentals</title>
+    <meta name="description" content="Rental Page for ~Scoots">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/logo.jpg" alt="~Scoots Logo">
+        <div id="headerDiv">
+            <h1>~Scoots</h1>
+            <h3>Life is an adventure; enjoy the ride!</h3>
+        </div>
+    </header>
+    <nav>
+        <button class="ham" onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navigation" class="response">
+            <li id="active"><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Rentals</h2>
+        <div class="jsonDiv"></div>
+    </main>
+    <footer>
+        <p>
+            <a href="https://www.facebook.com"><img src="images/facebookicon.jpg" alt="Facebook Icon"></a>
+            <a href="https://www.twitter.com"><img src="images/twittericon.jpg" alt="Twitter Icon"></a>
+            <a href="https://www.instagram.com"><img src="images/instagramicon.jpg" alt="Instagram Icon"></a>
+            <a href="https://www.youtube.com"><img src="images/youtubeicon.jpg" alt="YouTube Icon"></a>
+        </p>
+        <p>&copy; <span id="year">~Scoots</span> | <a href="attributions.html">Attributions</a> | Sylvie Dorsett</p>
+        <p><span id="currentDate"></span></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/json.js"></script>
+</body>
+</html>
