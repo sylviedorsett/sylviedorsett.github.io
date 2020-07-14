@@ -26,9 +26,8 @@ fetch(requestURL)
                 p3.innerHTML = `Full Day w/ Reservation: ${rental.resFull}`;
                 p4.innerHTML = `Half Day Walk-In: ${rental.walkHalf}`;
                 p5.innerHTML = `Full Day Walk-In: ${rental.walkFull}`;
-                image.innerHTML = rental.photo;
-                image.setAttribute('src', `images/${rental.photo}`);
-                image.setAttribute('alt', `images/${rental.name}`);
+                image.setAttribute('src', rental.photo);
+                image.setAttribute('alt', rental.name);
                 sect.setAttribute('class', "jsonSection")
 
                 div1.appendChild(div2);
