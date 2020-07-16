@@ -10,7 +10,6 @@ fetch(requestURL)
         rentals.forEach(rental => {
                 
                 let div1 = document.createElement('div');
-                let div2 = document.createElement('div');
                 let image = document.createElement('img'); 
                 let sect = document.createElement('section');
                 let h3 = document.createElement('h3');
@@ -21,18 +20,21 @@ fetch(requestURL)
                 let p5 = document.createElement('p');
 
                 h3.innerHTML = rental.name;
-                p1.innerHTML = `"Max Persons: ${rental.maxpersons}"`;
-                p2.innerHTML = `Half Day w/ Reservation: ${rental.resHalf}`;
-                p3.innerHTML = `Full Day w/ Reservation: ${rental.resFull}`;
-                p4.innerHTML = `Half Day Walk-In: ${rental.walkHalf}`;
-                p5.innerHTML = `Full Day Walk-In: ${rental.walkFull}`;
+                p1.innerHTML = `Max Persons: ${rental.maxpersons}`;
+                p2.innerHTML = `Half Day w/ Reservation: $${rental.resHalf}`;
+                p3.innerHTML = `Full Day w/ Reservation: $${rental.resFull}`;
+                p4.innerHTML = `Half Day Walk-In: $${rental.walkHalf}`;
+                p5.innerHTML = `Full Day Walk-In: $${rental.walkFull}`;
                 image.setAttribute('src', rental.photo);
                 image.setAttribute('alt', rental.name);
-                sect.setAttribute('class', "jsonSection")
+                image.setAttribute('class', "rentalPics");
+                sect.setAttribute('class', "jsonSection");
+                div1.setAttribute('class', "rentalDivs");
+                h3.setAttribute('class', "rentalH3");
 
-                div1.appendChild(div2);
-                div2.appendChild(sect);
-                div2.appendChild(image);
+
+                div1.appendChild(image);
+                div1.appendChild(sect);
                 sect.appendChild(h3);
                 sect.appendChild(p1);
                 sect.appendChild(p2);

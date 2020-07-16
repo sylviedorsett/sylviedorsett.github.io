@@ -464,7 +464,7 @@ nav ul li a {
 nav ul li#active {
   background-color: rgba(203, 38, 45, 0.7); }
 
-li:hover {
+nav li:hover {
   background-color: #cb262d; }
 
 h2 {
@@ -491,6 +491,7 @@ p {
 
 form {
   display: flex;
+  flex-direction: column;
   justify-content: center; }
 
 form button {
@@ -556,7 +557,10 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  text-align: center; }
+
+.contactSection h3 {
+  margin-bottom: 0; }
 
 .contactP {
   text-align: center; }
@@ -570,6 +574,161 @@ footer {
   color: #0c2bae;
   font-size: 16px;
   padding: 1rem; }
+
+footer a {
+  color: #0c2bae;
+  text-decoration: none; }
+
+footer a:hover {
+  color: #cb262d; }
+
+footer a:visited {
+  color: #777; }
+
+.jsonDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.rentalPics {
+  width: 100%; }
+
+.rentalH3 {
+  text-align: center;
+  font-family: "Pacifico", cursive; }
+
+.jsonSection {
+  margin-bottom: 2rem;
+  border: 4px solid #aad13a;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px #777;
+  padding: .5rem; }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  border: 4px solid #cb262d;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px #777;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 30rem; }
+
+legend {
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-size: 1.25rem; }
+
+.formLabel {
+  margin: .5rem 0 .75rem;
+  font-size: 1rem; }
+
+form div {
+  margin: .25rem 0 0; }
+
+form label input, textarea {
+  display: block;
+  font-size: 1rem;
+  border: 1px solid #0c2bae;
+  border-radius: 4px;
+  padding: .75rem;
+  width: 90%;
+  max-width: 20rem;
+  line-height: 1.2; }
+
+textarea {
+  margin-bottom: .5rem; }
+
+textarea:hover, input:hover, select:hover {
+  border: 1px solid #aad13a; }
+
+.radioButton {
+  display: inline;
+  width: 10%; }
+
+.reservationSubmit {
+  border: none;
+  box-shadow: none; }
+
+.submitButton {
+  border: 4px solid #cb262d;
+  box-shadow: 4px 4px 4px #777;
+  border-radius: 4px;
+  background-color: #f44c5b;
+  color: #ffffff;
+  padding: .75rem;
+  width: 20rem;
+  font-size: 1.25rem;
+  margin-left: -12px; }
+
+.submitButton:hover {
+  border: 4px solid #0c2bae;
+  background-color: #aad13a;
+  color: #0c2bae; }
+
+#rentalH3 {
+  margin-top: 1rem;
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  text-align: center; }
+
+#rentalAgreements {
+  margin-left: .25rem;
+  margin-right: 1.5rem; }
+
+.tourDivs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 4px solid #aad13a;
+  color: #0c2bae;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  box-shadow: 4px 4px 4px #777; }
+
+div h3 {
+  text-align: center; }
+
+div h3 a {
+  font-family: "Pacifico", cursive;
+  color: #0c2bae;
+  text-decoration: none;
+  font-size: 1.25rem; }
+
+div h3 a:hover {
+  color: #cb262d; }
+
+.tourImage {
+  display: block;
+  margin: .75rem auto;
+  border: 4px solid #0c2bae;
+  border-radius: 4px;
+  max-width: 200px;
+  box-shadow: 4px 4px 4px #777; }
+
+main.attributionsPage h3 {
+  margin: 2rem 0 .25rem 1rem; }
+
+main.attributionsPage p {
+  margin: .25rem 0 0 .25rem; }
+
+main.attributionsPage ol {
+  width: 90%;
+  margin: 0 auto 1rem auto;
+  padding-right: 5rem; }
+
+main.attributionsPage a {
+  color: #0c2bae;
+  text-decoration: none; }
+
+main.attributionsPage a:hover {
+  color: #cb262d; }
+
+main.attributionsPage a:visited {
+  color: #aad13a; }
 
 @media only screen and (min-width: 625px) {
   header {
@@ -645,7 +804,7 @@ footer {
     border: 2px solid #0c2bae; }
 
   th, td {
-    padding: 1rem;
+    padding: 1rem 1rem 0;
     text-align: center; }
 
   .table-icon {
@@ -658,9 +817,36 @@ footer {
     align-items: center;
     margin-bottom: 1rem; }
 
+  .contactSection {
+    text-align: left; }
+
   iframe {
     width: 250px;
-    height: 250px; } }
+    height: 250px; }
+
+  .rentalDivs {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem; }
+
+  .rentalPics {
+    width: 50%;
+    margin-right: 2rem; }
+
+  .jsonSection {
+    margin-bottom: 0; }
+
+  #rentalAgreements {
+    margin-left: 2rem;
+    margin-right: 2rem; }
+
+  .tourImage {
+    float: right;
+    margin: 0 .25rem .1rem .5rem;
+    max-width: 150px; }
+
+  div h3 {
+    margin-bottom: 1rem; } }
 @media only screen and (min-width: 1024px) {
   main {
     width: 900px;
@@ -690,4 +876,8 @@ footer {
 
   iframe {
     width: 300px;
-    height: 300px; } }
+    height: 300px; }
+
+  #rentalAgreements {
+    margin-left: 7.25rem;
+    margin-right: 7rem; } }

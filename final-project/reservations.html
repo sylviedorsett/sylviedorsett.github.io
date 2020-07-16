@@ -46,8 +46,8 @@
                 <label class="formLabel">Start Date <input type="date" name="startDate"></label>
                 <label class="formLabel">End Date <input type="date" name="endDate"></label>
                 <div>Time Frame</div>
-                <label class="radioButton"><input type="radio" name="timeframe" value="half">Half-Day</label>
-                <label class="radioButton"><input type="radio" name="timeframe" value="full">Full-Day</label>
+                <label><input class="radioButton" type="radio" name="timeframe" value="half">Half-Day</label>
+                <label><input class="radioButton" type="radio" name="timeframe" value="full">Full-Day</label>
                 <label class="formLabel" id="timeStart">Pick Up <input list="startTime" name="startTimeList"></label>
                     <datalist id="startTime">
                         <option>7:00 AM</option>
@@ -81,12 +81,12 @@
                         <option>7:00 PM</option>
                     </datalist>
                 <div>Rental Type</div>
-                <label class="radioButton"><input type="radio" name="rentalType" value="hondaMetroScooter">Honda Metro Scooter</label>
-                <label class="radioButton"><input type="radio" name="rentalType" value="hondaDioScooter">Honda Dio Scooter</label>
-                <label class="radioButton"><input type="radio" name="rentalType" value="hondaPCX">Honda PCX 150 Scooter</label>
-                <label class="radioButton"><input type="radio" name="rentalType" value="hondaPioneer">Honda Pioneer ATV</label>
-                <label class="radioButton"><input type="radio" name="rentalType" value="jeep2door">Jeep Wrangler - 2 Door</label>
-                <label class="radioButton"><input type="radio" name="rentalType" value="jeep4door">Jeep Wrangler - 4 Door</label>
+                <label><input class="radioButton" type="radio" name="rentalType" value="hondaMetroScooter">Honda Metro Scooter</label>
+                <label><input class="radioButton" type="radio" name="rentalType" value="hondaDioScooter">Honda Dio Scooter</label>
+                <label><input class="radioButton" type="radio" name="rentalType" value="hondaPCX">Honda PCX 150 Scooter</label>
+                <label><input class="radioButton" type="radio" name="rentalType" value="hondaPioneer">Honda Pioneer ATV</label>
+                <label><input class="radioButton" type="radio" name="rentalType" value="jeep2door">Jeep Wrangler - 2 Door</label>
+                <label><input class="radioButton" type="radio" name="rentalType" value="jeep4door">Jeep Wrangler - 4 Door</label>
                 <label class="formLabel">Cruise Line (if applicable) 
                     <select name="cruise">
                         <option value="" disabled selected>Please Select</option>
@@ -102,9 +102,9 @@
                     </select>
                 </label>
                 <div>Drop Off Request</div>
-                <label class="radioButton"><input type="radio" name="dropOff" value="Yes">Yes</label>
-                <label class="radioButton"><input type="radio" name="dropOff" value="No">No</label>
-                <label class=formLabel>Drop Off Location (if applicable) <input type="text" name="location" pattern="[A-Z a-z]{5,}"></label>
+                <label><input class="radioButton" type="radio" name="dropOff" value="Yes">Yes</label>
+                <label><input class="radioButton" type="radio" name="dropOff" value="No">No</label>
+                <label class=formLabel>Drop Off Location (if applicable) <input type="text" name="location" pattern="[A-Z a-z 0-9 , ]{5,}"></label>
             </fieldset>
 
             <fieldset>
@@ -112,12 +112,12 @@
                 <label class="top">Enter Comments Here: <textarea name="comments"></textarea></label>
             </fieldset>
 
-            <fieldset id="reservationSubmit">
-                <input type="submit" value="Submit Reservation Request" class="submitButton">  
+            <fieldset class="reservationSubmit">
+                <input class="submitButton" type="submit" value="Submit Reservation Request" class="submitButton">  
             </fieldset>
         </form>
-        <h3>Rental Agreements</h3>
-        <ol>
+        <h3 id="rentalH3">Rental Agreements</h3>
+        <ol id="rentalAgreements">
             <li>A $50 security deposit is required to confirm reservations.</li>
             <li>A valid driver's license is required in hand at time of rental.</li>
             <li>No one under 12 years of age are allowed to ride on the scooters.</li>

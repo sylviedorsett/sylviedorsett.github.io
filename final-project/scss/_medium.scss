@@ -87,7 +87,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 1rem;
+    padding: 1rem 1rem 0;
     text-align: center;
 }
 
@@ -103,8 +103,44 @@ th, td {
     margin-bottom: 1rem;
 }
 
+.contactSection {
+    text-align: left;
+}
+
 iframe {
     width: 250px;
     height: 250px;
 }
 
+//Rentals Page
+.rentalDivs {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.rentalPics {
+    width: 50%;
+    margin-right: 2rem;
+}
+
+.jsonSection {
+    margin-bottom: 0;
+}
+
+//Reservations Page
+#rentalAgreements {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+//Tours Page
+.tourImage {
+    float: right;
+    margin: 0 .25rem .1rem .5rem;
+    max-width: 150px;
+}
+
+div h3 {
+    margin-bottom: 1rem;
+}
