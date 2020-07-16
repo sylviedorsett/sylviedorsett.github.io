@@ -481,6 +481,9 @@ p {
   width: 50%;
   margin: 1rem auto 0; }
 
+img[data-src] {
+  filter: blur(0.2em); }
+
 .mainImg {
   display: block;
   margin: 1rem auto 0;

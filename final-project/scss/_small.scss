@@ -112,6 +112,10 @@ p {
     margin: 1rem auto 0;
 }
 
+img[data-src] {
+    filter: blur(.2em);
+}
+
 .mainImg {
     display: block;
     margin: 1rem auto 0;
