@@ -25,7 +25,7 @@ document.getElementById("currentDate").innerHTML = dateString;
 
 
 /* lazyload images */
-const images = document.querySelectorAll('img[data-src]');//get all imgs with data-src attribute
+const images = document.querySelectorAll('img[data-src]');
 
 const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
@@ -47,12 +47,12 @@ const imgObserver = new IntersectionObserver((items, observer) => {
     });
 }, imgOptions);
     
-    images.forEach((img) => {
-    imgObserver.observe(img);
+    images.forEach((pic) => {
+    imgObserver.observe(pic);
     });
 }
 else {
-    images.forEach((img) => {
-    loadImages(img);
+    images.forEach((pic) => {
+    loadImages(pic);
     });
 }
