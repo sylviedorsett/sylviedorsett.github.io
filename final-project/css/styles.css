@@ -565,6 +565,11 @@ iframe {
 .contactP {
   text-align: center; }
 
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto; }
+
 footer {
   margin-top: 1rem;
   display: flex;
@@ -579,11 +584,8 @@ footer a {
   color: #0c2bae;
   text-decoration: none; }
 
-footer a:hover {
+footer p a:hover {
   color: #cb262d; }
-
-footer a:visited {
-  color: #777; }
 
 .jsonDiv {
   display: flex;
@@ -729,6 +731,10 @@ main.attributionsPage a:hover {
 
 main.attributionsPage a:visited {
   color: #aad13a; }
+
+.confirmationP {
+  text-align: center;
+  margin: 1rem; }
 
 @media only screen and (min-width: 625px) {
   header {

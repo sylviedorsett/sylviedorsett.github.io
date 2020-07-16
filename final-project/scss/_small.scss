@@ -211,6 +211,13 @@ iframe {
     text-align: center;
 }
 
+// Main Footer
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
 footer {
     margin-top: 1rem;
     display: flex;
@@ -227,13 +234,10 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
+footer p a:hover {
     color: $red;
 }
 
-footer a:visited {
-    color: #777;
-}
 
 //Rentals Page
 .jsonDiv {
@@ -410,4 +414,10 @@ main.attributionsPage a:hover {
 
 main.attributionsPage a:visited {
     color: $green;
+}
+
+//Confirmation Pages
+.confirmationP {
+    text-align: center;
+    margin: 1rem;
 }
