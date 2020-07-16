@@ -21,7 +21,9 @@ document.getElementById("year").innerHTML = currentYear;
 var dateString = dayNames[day] + ", " + monthNames[month] + " " + date + ", " + currentYear; 
 document.getElementById("currentDate").innerHTML = dateString;
 
-
+/* last modified date */
+var lastModification = document.lastModified;
+document.getElementById("lastMod").innerHTML = lastModification;
 
 
 /* lazyload images */
