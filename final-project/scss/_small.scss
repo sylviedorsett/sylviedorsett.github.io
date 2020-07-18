@@ -345,6 +345,10 @@ textarea:hover, input:hover, select:hover {
     color: $darkBlue;
 }
 
+#jsonTable {
+    display: none;
+}
+
 #rentalH3 {
     margin-top: 1rem;
     font-family: $pacificoFont;
@@ -357,6 +361,7 @@ textarea:hover, input:hover, select:hover {
     margin-right: 1.5rem;
 }
 
+//Tours Page
 .tourDivs {
     display: flex;
     flex-direction: column;

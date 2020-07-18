@@ -134,6 +134,23 @@ iframe {
     margin-right: 2rem;
 }
 
+#jsonTable {
+    display: block;
+}
+
+th h3 {
+    padding: .5rem;
+    font-family: $pacificoFont;
+}
+
+.tableRow th {
+    padding: .25rem;
+}
+
+#jsonTable td {
+    padding: .25rem;
+}
+
 //Tours Page
 .tourImage {
     float: right;

@@ -674,6 +674,9 @@ textarea:hover, input:hover, select:hover {
   background-color: #aad13a;
   color: #0c2bae; }
 
+#jsonTable {
+  display: none; }
+
 #rentalH3 {
   margin-top: 1rem;
   font-family: "Pacifico", cursive;
@@ -849,6 +852,19 @@ main.attributionsPage a:visited {
     margin-left: 2rem;
     margin-right: 2rem; }
 
+  #jsonTable {
+    display: block; }
+
+  th h3 {
+    padding: .5rem;
+    font-family: "Pacifico", cursive; }
+
+  .tableRow th {
+    padding: .25rem; }
+
+  #jsonTable td {
+    padding: .25rem; }
+
   .tourImage {
     float: right;
     margin: 0 .25rem .1rem .5rem;
@@ -889,4 +905,7 @@ main.attributionsPage a:visited {
 
   #rentalAgreements {
     margin-left: 7.25rem;
-    margin-right: 7rem; } }
+    margin-right: 7rem; }
+
+  #jsonTable td {
+    padding: .5rem; } }

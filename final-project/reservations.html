@@ -116,6 +116,21 @@
                 <input class="submitButton" type="submit" value="Submit Reservation Request" class="submitButton">  
             </fieldset>
         </form>
+
+        <table id="jsonTable">
+            <tr class="tableRow">
+                <th colspan='6'><h3>Rental Pricing</h3></th>
+            </tr>
+            <tr class="tableRow">
+                <th>Rental Type</th>
+                <th>Max Persons</th>
+                <th>Reservation Half Day (3 hrs)</th>
+                <th>Reservation Full Day</th>
+                <th>Walk In Half Day (3hrs)</th>
+                <th>Walk-In Full Day</th>
+            </tr>
+        </table>
+
         <h3 id="rentalH3">Rental Agreements</h3>
         <ol id="rentalAgreements">
             <li>A $50 security deposit is required to confirm reservations.</li>
@@ -142,5 +157,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/jsonTable.js"></script>
 </body>
 </html>
