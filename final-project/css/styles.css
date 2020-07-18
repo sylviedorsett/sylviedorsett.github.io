@@ -859,9 +859,10 @@ main.attributionsPage a:visited {
   #jsonTable {
     display: block; }
 
-  th h3 {
+  #tableH3 {
     padding: .5rem;
-    font-family: "Pacifico", cursive; }
+    font-family: "Pacifico", cursive;
+    font-size: 1.25rem; }
 
   .tableRow th {
     padding: .25rem; }
