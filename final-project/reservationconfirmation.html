@@ -32,10 +32,10 @@
     <main>
         <h2>Reservation Confirmation</h2>
         <p class="confirmationP">Thank you for your reservation request. We will send you an email with a reservation number shortly. <strong>Your reservation will be confirmed once we have received your $50 security deposit</strong>. You can pay your deposit over the phone by calling us at +52-987-999-9999 or you may complete the form below. We look forward to serving you!</p>
-        <form method="get">
+        <form method="get" action="payment.html">
             <fieldset>
                 <legend>Payment Information</legend>
-                <label class="formLabel">Reservation Number<input type="tel" name="reservationNumber" inputmode="numeric" pattern="[0-9]{9}" required></label>
+                <label class="formLabel">Reservation Number<input type="tel" name="reservationNumber" pattern="[0-9]{9}" required></label>
                 <label><input class="radioButton" type="radio" name="ccType" value="visa">Visa</label>
                 <label><input class="radioButton" type="radio" name="ccType" value="mastercard">Mastercard</label>
                 <label><input class="radioButton" type="radio" name="ccType" value="discover">Discover</label>
@@ -72,7 +72,7 @@
                 <label class="formLabel">CVV Code<input type="tel" name="cvv" inputmode="numeric" pattern="[0-9\s]{3}" required></label>
             </fieldset>
             <fieldset class="reservationSubmit">
-                <input class="submitButton" type="submit" value="Submit Payment" class="submitButton">  
+                <input class="submitButton" type="submit" value="Submit Payment">  
             </fieldset>
         </form>
     </main>
