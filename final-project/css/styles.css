@@ -700,6 +700,10 @@ textarea:hover, input:hover, select:hover {
 div h3 {
   text-align: center; }
 
+.tourH3 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.25rem; }
+
 div h3 a {
   font-family: "Pacifico", cursive;
   color: #0c2bae;
