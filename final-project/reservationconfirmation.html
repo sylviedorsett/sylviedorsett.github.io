@@ -32,7 +32,7 @@
     <main>
         <h2>Reservation Confirmation</h2>
         <p class="confirmationP">Thank you for your reservation request. We will send you an email with a reservation number shortly. <strong>Your reservation will be confirmed once we have received your $50 security deposit</strong>. You can pay your deposit over the phone by calling us at +52-987-999-9999 or you may complete the form below. We look forward to serving you!</p>
-        <form method="get" action="https://www.payment.html">
+        <form method="get" action="payment.html">
             <fieldset>
                 <legend>Payment Information</legend>
                 <label class="formLabel">Reservation Number<input type="tel" name="reservationNumber" pattern="[0-9]{9}" required></label>
@@ -55,7 +55,7 @@
                     <option>November</option>
                     <option>December</option>
                 </datalist>
-                <label class="formLabel" id="expYear">Exp. Month<input list="years" name="expYearList" required></label>
+                <label class="formLabel" id="expYear">Exp. Year<input list="years" name="expYearList" required></label>
                 <datalist id="years">
                     <option>2020</option>
                     <option>2021</option>
